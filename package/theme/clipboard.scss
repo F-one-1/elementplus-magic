@@ -1,0 +1,30 @@
+.magic-clipboard {
+  position: relative;
+
+  &-copy {
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  &-success {
+    position: absolute;
+    display: block;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #3eaf7c;
+    z-index: 1;
+    font-size: 14px;
+    transform: translate3d(0, -30px, 0);
+    transition: all .3s ease;
+  }
+
+  &-transform {
+    &-enter {
+      transform: translate3d(0, -15px, 0);
+    }
+
+    &-leave-active {
+      opacity: 0 !important;
+    }
+  }
+}

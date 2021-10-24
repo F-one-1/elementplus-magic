@@ -1,0 +1,187 @@
+@import "./mixins";
+@import "./var";
+
+.magic-import {
+  @include utils-fullParent;
+  position: relative;
+
+  &-upload {
+    @include utils-fullParent;
+    @include utils-flexCenter;
+    justify-content: center;
+
+    &-input {
+      display: none;
+      z-index: 9999;
+    }
+
+    &-drop {
+      @include utils-flexCenter;
+      color: $base-font-color-secondary;
+      border: 2px dashed $base-divider-color;
+      margin: -40px 20px 0 20px;
+      justify-content: center;
+      position: relative;
+      border-radius: 5px;
+      text-align: center;
+      max-height: 220px;
+      max-width: 550px;
+      height: 60%;
+      width: 80%;
+
+      i {
+        margin-top: -10px;
+        display: block;
+        font-size: 67px;
+        color: #bbb;
+      }
+    }
+  }
+
+  &-main {
+    @include utils-flexVertical;
+    @include utils-fullParent;
+  }
+
+  &-table {
+    margin: 20px 12px 0;
+    height: 220px;
+    box-sizing: border-box;
+
+    .el-pagination--small .el-input--mini .el-input__inner {
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &-error {
+    margin: 0 12px;
+    padding: 10px 15px;
+    height: 77px;
+    box-sizing: border-box;
+    background: rgba(233, 82, 100, 0.1);
+
+    &-title {
+      font-size: $base-font-size-normal;
+      margin: 5px 0;
+      color: #E6394E;
+    }
+
+    &-message {
+      @include utils-ellipsis;
+      font-size: $base-font-size-small;
+      margin: 8px 0;
+      color: #E6394E;
+    }
+  }
+
+  &-config {
+    flex: 1;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  &-resolve {
+    display: flex;
+    align-items: center;
+
+    &-left {
+      font-size: $base-font-size-normal;
+      color: $base-font-color-regular;
+      flex: 0 0 300px;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 18px;
+      margin-right: 5px;
+    }
+
+    &-default {
+      display: flex;
+      margin: 5px 0;
+
+      .el-radio {
+        flex: 1;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0
+        }
+      }
+
+      .el-radio__label {
+        padding-left: 6px
+      }
+    }
+
+    &-else {
+      @include utils-inlineFlex;
+
+      .el-radio {
+        margin-right: 10px
+      }
+
+      .el-radio__label {
+        padding-left: 6px
+      }
+    }
+
+    &-center {
+      flex: 0 0 230px;
+
+      .el-checkbox {
+        color: $base-font-color-regular;
+        font-size: $base-font-size-normal;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 28px;
+      }
+    }
+
+    &-divider {
+      @include utils-inlineBlock;
+      background-color: $base-divider-color;
+      margin: 0 28px 0 8px;
+      position: relative;
+      height: 3em;
+      width: 1px;
+    }
+
+    &-right {
+      flex: 0 0 240px;
+    }
+
+    &-row {
+      line-height: 36px;
+
+      label {
+        color: $base-font-color-regular;
+        display: inline-block;
+        font-size: 14px;
+        width: 80px;
+      }
+
+      .el-input-number {
+        width: 100px;
+      }
+    }
+  }
+
+  &-btn {
+    @include utils-flexCenter;
+    padding: 10px 16px;
+    border-top: 1px solid $base-divider-color;
+  }
+
+  &-card {
+    margin: 0 12px;
+    padding: 4px 0;
+    border-top: 1px solid $base-divider-color;
+
+    &-title {
+      padding: 10px 0;
+      font-size: 14px;
+      color: $base-font-color-primary;
+    }
+  }
+}

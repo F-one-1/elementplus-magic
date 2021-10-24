@@ -1,0 +1,16 @@
+.em-tip {
+  border-left: 5px solid currentColor;
+
+  &.el-alert {
+    padding: 10px 4px;
+  }
+
+  .el-alert__title {
+    line-height: 20px;
+  }
+
+  .el-alert__description {
+    line-height: 1.4;
+    color: currentColor !important;
+  }
+}

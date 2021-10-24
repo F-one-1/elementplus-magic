@@ -1,0 +1,25 @@
+@import "./mixins";
+
+.magic-table {
+  @include utils-fullParent;
+  padding-bottom: 20px;
+
+  &.is-pagination {
+    padding-bottom: 42px;
+  }
+
+  &-main {
+    @include utils-fullParent;
+  }
+
+  &-pagination {
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .el-table--scrollable-y .el-table__body-wrapper {
+    &::-webkit-scrollbar-corner {
+      display: none;
+    }
+  }
+}

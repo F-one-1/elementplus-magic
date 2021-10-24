@@ -1,0 +1,15 @@
+.magic-signature-pen {
+  position: relative;
+
+  &-buttons {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
+
+    .el-button {
+      margin-left: 2px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import "./mixins";
+
+.magic-tree-grid {
+  @include utils-fullParent;
+  padding-bottom: 10px;
+}

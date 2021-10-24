@@ -3,13 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vuepress/client": "^2.0.0-beta.26",
     "core-js": "^3.8.3",
-    "vue": "^3.2.6"
+    "element-plus": "^1.1.0-beta.4",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "node-sass": "6.0.1",
+    "sass-loader": "11.1.0",
+    "vue": "^3.2.6",
+    "vue-draggable-resizable": "2.0.0-rc2",
+    "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,7 +29,8 @@
     "@vue/cli-service": "~5.0.0-beta.6",
     "@vue/compiler-sfc": "^3.2.6",
     "eslint": "^7.20.0",
-    "eslint-plugin-vue": "^7.2.0"
+    "eslint-plugin-vue": "^7.2.0",
+    "vuepress": "^2.0.0-beta.26"
   },
   "eslintConfig": {
     "root": true,

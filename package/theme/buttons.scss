@@ -1,0 +1,25 @@
+@import "./var";
+@import "./mixins";
+
+.magic-buttons {
+  @include utils-inlineFlex;
+
+  &-split {
+    @include utils-inlineBlock;
+    background: $base-divider-color;
+    color: rgba(0, 0, 0, 0);
+    width: 1px;
+    height: 1em;
+  }
+
+  &-icon {
+    @include utils-inlineBlock;
+    font-size: 18px;
+    padding: 8px;
+    color: $base-font-color-regular;
+
+    &:hover {
+      color: $base-font-color-primary;
+    }
+  }
+}

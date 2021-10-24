@@ -1,0 +1,30 @@
+@import "./var";
+@import "./mixins";
+
+.magic-container {
+  @include utils-fullParent;
+  display: flex;
+  padding: 20px;
+
+  &-item {
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.is-flex {
+      flex: 1;
+    }
+
+    .magic-page {
+      padding: 0;
+    }
+  }
+}

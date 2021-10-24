@@ -1,0 +1,36 @@
+@mixin number-size($size, $right1, $right2) {
+  &--#{$size} {
+    &.is-align-left {
+      .el-input__inner {
+        text-align: left;
+      }
+    }
+
+    &.is-without-controls {
+      .el-input-number__unit {
+        margin-right: $right1;
+      }
+    }
+
+    .el-input-number__unit {
+      margin-right: $right2;
+    }
+  }
+}
+
+.el-input-number {
+  @include number-size(large, 10px, 45px);
+  @include number-size(medium, 10px, 45px);
+  @include number-size(small, 10px, 40px);
+  @include number-size(mini, 6px, 30px);
+
+  .el-input-number__prefix {
+    padding-left: 6px;
+  }
+
+  &.is-with-prefix {
+    .el-input__inner {
+      padding-left: 40px;
+    }
+  }
+}

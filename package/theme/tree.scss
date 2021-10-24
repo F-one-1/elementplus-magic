@@ -1,0 +1,62 @@
+@import "./mixins";
+@import "./var";
+
+@mixin tree-size($size, $vertical, $horizontal) {
+  &.is-#{$size} {
+    padding: $vertical $horizontal;
+
+    .magic-tree-title {
+      padding: $vertical 0;
+    }
+
+    .magic-tree-top {
+      padding: $vertical 0;
+    }
+  }
+}
+
+.magic-tree {
+  @include utils-fullParent;
+  @include utils-flexVertical;
+  @include tree-size('normal', $tree-space-normal-vertical, $tree-space-normal-horizontal);
+  @include tree-size('medium', $tree-space-medium-vertical, $tree-space-medium-horizontal);
+  @include tree-size('small', $tree-space-small-vertical, $tree-space-small-horizontal);
+  background: $base-panel-color;
+  border: $base-panel-border;
+  box-shadow: $base-panel-box-shadow;
+  overflow: hidden;
+
+  &-title {
+    @include utils-flexCenter;
+  }
+
+  &-top {
+    @include utils-flexCenter;
+  }
+
+  &-icon {
+    color: $base-font-color-regular;
+    font-size: 18px;
+    margin-left: 10px;
+
+    &:hover {
+      color: $base-font-color-primary;
+    }
+  }
+
+  &-input {
+    flex: 1;
+    padding: 2px 0;
+  }
+
+  &-content {
+    flex: 1;
+    padding: 4px 0;
+    overflow: auto;
+
+    .el-tree-node__content {
+      height: 34px;
+      font-size: 14px;
+    }
+  }
+}

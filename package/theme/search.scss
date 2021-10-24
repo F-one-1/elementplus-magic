@@ -1,0 +1,82 @@
+@import "./var";
+@import "./mixins";
+
+.magic-search {
+  @include utils-inlineFlex;
+
+  &-inline {
+    @include utils-inlineFlex;
+    min-height: 40px;
+  }
+
+  &-link {
+    @include utils-translation;
+    color: $base-primary-color;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &-column {
+    margin-bottom: 0 !important;
+    margin-right: 12px;
+    min-width: 186px;
+    max-width: 316px;
+
+    &:last-child {
+      margin-right: 0 !important
+    }
+
+    &.el-form-item.has-label {
+      display: inline-flex !important;
+      min-width: 266px;
+      max-width: 386px;
+      margin-right: 15px;
+
+      .el-form-item__content {
+        flex: 1
+      }
+
+      .el-form-item__label {
+        white-space: nowrap
+      }
+    }
+  }
+
+  &-form {
+    @include utils-fullParent;
+    padding: 10px 16px 60px;
+    overflow: auto;
+  }
+
+  &-item {
+    margin-bottom: 14px !important;
+
+    .el-form-item__label {
+      font-weight: bold;
+      padding-bottom: 8px !important;
+    }
+  }
+
+  &-btn {
+    @include utils-flexCenter;
+    background: $base-panel-color;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+
+    &.is-fixed {
+      @include utils-fixedBottom;
+      border-top: 1px solid $base-divider-color;
+      padding: 10px 16px;
+      margin-top: 0;
+    }
+
+    button {
+      flex: 1;
+    }
+  }
+}

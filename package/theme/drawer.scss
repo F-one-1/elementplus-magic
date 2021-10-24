@@ -1,0 +1,119 @@
+@import "./var";
+@import "./mixins";
+
+.magic-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+
+  &-wrap {
+    @include utils-flexVertical;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 200;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+    &.is-left {
+      left: 0;
+      transform: translate3d(-100%, 0, 0);
+
+      .magic-drawer-switch {
+        right: 0;
+        transform: translateX(100%);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &.is-right {
+      right: 0;
+      transform: translate3d(100%, 0, 0);
+
+      .magic-drawer-switch {
+        left: 0;
+        transform: translateX(-100%);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &.is-open {
+      transform: translate3d(0, 0, 0)
+    }
+  }
+
+  &-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 100;
+    background: #000;
+    transition: all 0.3s ease;
+
+    &.is-open {
+      opacity: 0.25;
+    }
+  }
+
+  &-header {
+    @include utils-flexCenter;
+    @include utils-ellipsis;
+    position: relative;
+    height: 50px;
+    font-weight: 700;
+    padding-left: 12px;
+    color: $base-font-color-primary;
+    font-size: $base-font-size-normal;
+    border-bottom: 1px solid $base-border-color;
+  }
+
+  &-close {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    cursor: pointer;
+    transform: translate3d(0, -50%, 0);
+
+    &-icon {
+      @include utils-size(32px);
+      line-height: 32px;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  &-body {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  &-footer {
+    @include utils-flexCenter;
+    justify-content: flex-end;
+    height: 56px;
+    padding: 0 16px;
+    text-align: right;
+    box-sizing: border-box;
+    border-top: 1px solid $base-border-color;
+    background: #fff;
+  }
+
+  &-switch.el-button {
+    position: absolute;
+    top: 25%;
+    font-size: 22px;
+    box-shadow: $base-shadow;
+    padding: 12px 15px 12px 20px;
+  }
+}

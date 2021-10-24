@@ -1,0 +1,28 @@
+.magic-file {
+  .el-upload-list__item {
+    line-height: 36px;
+
+    .el-icon-close {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+
+    .el-upload-list__item-img {
+      width: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+
+    .el-upload-list__item-name {
+      padding-left: 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "./mixins";
+@import "./var";
+
+.magic-title {
+  @include utils-inlineBlock;
+  font-family: $base-font-family;
+
+  &-text {
+    font-size: $base-font-size-large;
+    color: $base-font-color-regular;
+  }
+
+  &.has-describe {
+    .magic-title-describe {
+      margin-top: 4px;
+      font-size: $base-font-size-small;
+      color: $base-font-color-secondary;
+    }
+
+    .magic-title-text {
+      font-size: $base-font-size-medium;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "./mixins";
+
+.magic-custom-panel {
+  .handle-br {
+    @include utils-size(20px);
+    display: block !important;
+    background: transparent;
+    border: none;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+  }
+}

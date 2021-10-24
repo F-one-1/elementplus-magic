@@ -1,0 +1,74 @@
+@import "./mixins";
+@import "./var";
+
+.magic-treeselect {
+
+  &-tree {
+    overflow: auto;
+    height: 200px;
+
+    &__label {
+      position: absolute;
+      top: 1px;
+      left: 0;
+      width: 100%;
+      cursor: pointer;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 0 25px 0 15px;
+      color: $base-font-color-regular;
+
+      &.is-tags {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+
+      &.is-full {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        @include utils-ellipsis;
+      }
+
+      .el-tag {
+        margin: 2px 6px 2px 0;
+      }
+    }
+  }
+
+  &-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  &.el-popover {
+    min-width: 220px;
+    padding: 12px 0;
+  }
+
+  .magic-treeselect-tree__input {
+    border: none;
+    outline: 0;
+    padding: 0;
+    height: 24px;
+    margin-left: 5px;
+    font-size: inherit;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: $base-font-color-regular;
+  }
+
+  .popper__arrow {
+    left: 20px !important;
+  }
+
+  .el-tree-node__expand-icon {
+    font-size: 16px
+  }
+
+  .el-tree-node__content {
+    padding: 4px 0
+  }
+}

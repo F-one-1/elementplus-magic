@@ -1,0 +1,36 @@
+@import "./var";
+
+.magic-contextMenu {
+  z-index: 100;
+  padding: 5px 0;
+  position: fixed;
+  list-style: none;
+  border-radius: 2px;
+  color: $contextMenu-font-color;
+  box-shadow: $contextMenu-box-shadow;
+  background: $contextMenu-background-color;
+  border: 1px solid $contextMenu-border-color;
+
+  &-divider {
+    height: 1px;
+    margin: 4px 0;
+    background: $contextMenu-divider-color;
+  }
+
+  &-item {
+    padding: 6px 30px 6px 20px;
+    white-space: nowrap;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 500;
+      background: $contextMenu-hover-background-color;
+    }
+  }
+
+  &-icon {
+    font-weight: inherit;
+    margin-right: 5px;
+  }
+}

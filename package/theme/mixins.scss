@@ -1,0 +1,49 @@
+@mixin utils-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin utils-fullParent {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+@mixin utils-flexVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin utils-flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin utils-inlineFlex {
+  display: inline-flex;
+  align-items: center;
+}
+
+@mixin utils-translation($size: 1px) {
+  position: relative;
+  top: $size;
+}
+
+@mixin utils-fixedBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin utils-inlineBlock {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin utils-size($size) {
+  width: $size;
+  height: $size;
+}

@@ -1,0 +1,28 @@
+.magic-select {
+  &-wrap {
+    position: relative;
+    max-height: 256px;
+    overflow: auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  &-all {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 34px;
+    font-size: 14px;
+    margin: 0 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+    color: #606060;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+}

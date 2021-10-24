@@ -1,0 +1,19 @@
+@import "./mixins";
+
+.magic-editable {
+  @include utils-fullParent;
+  padding-bottom: 20px;
+
+  &.is-pagination {
+    padding-bottom: 42px;
+  }
+
+  &-main {
+    @include utils-fullParent;
+  }
+
+  &-pagination {
+    width: 100%;
+    margin-top: 6px;
+  }
+}

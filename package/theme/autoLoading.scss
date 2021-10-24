@@ -1,0 +1,29 @@
+@import "./mixins";
+@import "./var";
+
+.magic-autoLoading {
+  @include utils-fullParent;
+  position: relative;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &-spinner {
+    position: absolute;
+    left: 50%;
+
+    &.is-top {
+      top: $autoLoading-spinner-top;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    &.is-bottom {
+      bottom: $autoLoading-spinner-bottom;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    &.is-center {
+      top: $autoLoading-spinner-center;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "./mixins";
+
+.magic-editor {
+  @include utils-fullParent;
+  display: flex;
+  background: #FFFFFF;
+
+  &-source {
+    width: 250px;
+    height: 100%;
+
+    &-title {
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    &-items {
+      position: relative;
+      overflow: hidden;
+      padding: 0 8px 10px;
+      margin: 0;
+    }
+
+    &-item {
+      font-size: 12px;
+      display: block;
+      width: 46%;
+      line-height: 26px;
+      position: relative;
+      float: left;
+      left: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 2%;
+      color: #333;
+      border: 1px solid #f4f6fc;
+      box-sizing: border-box;
+
+      &:hover {
+        color: #409eff;
+        border: 1px dashed #409eff;
+      }
+
+      a {
+        display: block;
+        cursor: move;
+        background: #f4f6fc;
+        border: 1px solid #f4f6fc;
+
+        i {
+          margin-right: 6px;
+          margin-left: 8px;
+          font-size: 14px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  &-content {
+    flex: 1;
+    height: 100%;
+  }
+
+  &-property {
+    width: 250px;
+    height: 100%;
+  }
+}

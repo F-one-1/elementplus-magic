@@ -1,0 +1,18 @@
+@import "var";
+
+.magic-popover-confirm {
+  &-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &-content {
+    font-size: 14px;
+    margin: 12px 0 16px 0;
+  }
+
+  &-btn {
+    text-align: right
+  }
+}

@@ -1,0 +1,25 @@
+@import "./mixins";
+@import "./var";
+
+.magic-spinner {
+  @include utils-inlineBlock;
+  @include utils-size(28px);
+  stroke: #333;
+  fill: #333;
+
+  svg {
+    @include utils-size(28px);
+  }
+
+  &__spiral {
+
+    .start {
+      stop-color: #fff;
+      stop-opacity: 0;
+    }
+
+    .stop {
+      stop-color: #333
+    }
+  }
+}
