@@ -29,8 +29,14 @@ export const data = {
   ],
   "filePathRelative": "AutoLoading/README.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1635083550000,
+    "contributors": [
+      {
+        "name": "“F-one-1”",
+        "email": "fy1033409628@163.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

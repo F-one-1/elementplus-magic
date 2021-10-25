@@ -1,6 +1,6 @@
 import { ElNotification,ElMessageBox } from 'element-plus'
-import Vue from 'vue'
-
+import { createApp } from 'vue'
+const app = createApp({})
 export const config = {}
 
 export let xlsx = null
@@ -13,7 +13,7 @@ export let clipboard = null
 
 export let printjs = null
 
-export let vue = Vue
+export let vue = app
 
 export let tools = {
   ElMessageBox: ElMessageBox,

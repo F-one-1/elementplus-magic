@@ -7,6 +7,5 @@
 
 
 ### Cols
-
-<Code tag="Form/Cols" style="max-width: 850px;"/>
+<d/>
 
