@@ -1,5 +1,4 @@
 <template>
-<div>1</div>
   <mg-popover-confirm
     @confirm="onConfirm"
     content="您确定要删除吗？">

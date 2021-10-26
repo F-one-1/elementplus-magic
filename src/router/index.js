@@ -11,6 +11,7 @@ const form = () => import("../Form.vue")
 const treeselect = () => import("../treeselect.vue")
 const layer = () => import("../layer.vue")
 const vuedr = () => import("../vueDR.vue")
+const demo = () => import("../demo.vue")
 const routes = [
   {
     path: "/home",
@@ -61,6 +62,11 @@ const routes = [
     path: "/vuedr",
     name: "vuedr",
     component: vuedr
+  },
+  {
+    path: "/demo",
+    name: "demo",
+    component: demo
   },
 ]
 

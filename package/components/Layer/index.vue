@@ -1,9 +1,7 @@
 <template>
-  <div>1</div>
   <div
     class="magic-layer"
     :style="{ zIndex: currentZ }">
-    <div>1</div>
     <transition name="el-fade-in">
       <div
         v-if="currentValue && showMask"
@@ -11,7 +9,6 @@
         @click="onHide"
       />
     </transition>
-    <div>1</div>
     <transition name="dialog-fade">
       <vue-draggable-resizable
         @resizing="onResizing"

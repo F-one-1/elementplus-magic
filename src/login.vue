@@ -1,5 +1,4 @@
 <template>
-  <div>1</div>
   <p>index</p>
   <button @click="toHome">toHome</button>
   <button @click="toSelect">toSelect</button>

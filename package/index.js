@@ -19,6 +19,7 @@ import MgSpinner from './components/Spinner/index.vue'
 import MgForm from './business/Form/index.vue'
 import MgTreeselect from './components/TreeSelect/index.vue'
 import MgLayer from './components/Layer/index.vue'
+// import demo from './components/demojsx/index'
 let components = [
   Button,
   Select,
@@ -30,7 +31,8 @@ let components = [
   MgSpinner,
   MgForm,
   MgTreeselect,
-  MgLayer
+  MgLayer,
+  // demo
 ]
 
 // const install = (Vue) => {

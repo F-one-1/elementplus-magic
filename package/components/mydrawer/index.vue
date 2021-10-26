@@ -37,8 +37,6 @@
       <div
         class="magic-drawer-body"
         :style="bodyStyle">
-        <div>1</div>
-        <div>1</div>
         <slot/>
       </div>
       <div

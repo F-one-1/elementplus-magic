@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  plugins: ["@vue/babel-plugin-jsx"],
   title: 'magic',
   base: '/magic/',
   description: '基于 ElementUI 开发的一套高效的 UI 组件',
@@ -40,5 +41,5 @@ module.exports = {
   },
   chainWebpack: (config) => {
     config.resolve.alias.set('magic', path.join(__dirname, '../../package/'))
-  }
+  },
 }

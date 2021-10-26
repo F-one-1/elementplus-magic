@@ -15,12 +15,12 @@ export const data = {
   ],
   "filePathRelative": "Form/README.md",
   "git": {
-    "updatedTime": 1635083550000,
+    "updatedTime": 1635172737000,
     "contributors": [
       {
         "name": "“F-one-1”",
         "email": "fy1033409628@163.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }
