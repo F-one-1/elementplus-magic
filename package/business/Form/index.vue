@@ -14,14 +14,14 @@
       :style="currentContentStyle"
       :label-width="currentLabelWidth"
       :label-position="currentLabelPosition">
-      <FormColumns
+      <form-columns
         :cols="currentCols"
         :store="currentStore"
         :gutter="currentGutter"
         :panels="currentPanels"
         :columns="currentColumns">
         <slot/>
-      </FormColumns>
+      </form-columns>
       <div
         v-if="!currentHideBottom"
         :class="currentBtnClass"
@@ -75,7 +75,7 @@
 </template>
 
 <script type="text/jsx">
-  import FormColumns from './columns.vue'
+  import FormColumns from './temColumns'
   import AutoLoading from '../../components/AutoLoading/index.vue'
   // import PopoverConfirm from '../../basic/PopoverConfirm/index.vue'
   import Form from '../../model/Form'

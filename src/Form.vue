@@ -1,4 +1,9 @@
 <template>
+  <div v-for="item in [1,2,3]" :key="item">
+    <div>
+      {{item}}
+    </div>
+  </div>
   <div class="code">
     <div class="code-content">
       <mg-form :options="options"/>

@@ -1,6 +1,6 @@
 <script type="text/jsx">
   import FormColumn from '../FormColumn/index.vue'
-  import Column from '../../model/Column.js'
+  // import Column from '../../model/Column.js'
   export default {
     components: {
       FormColumn
@@ -27,11 +27,11 @@
         return this.store.getValue(field)
       },
       getColumns () {
-        const slots = Column.GetColumnsFormSlots(this.$slots.default, Column.POSITION.form)
-        console.log('this.$slots.default',this.$slots.default,Column.POSITION.form)
+        // const slots = Column.GetColumnsFormSlots(this.$slots.default, Column.POSITION.form)
+        // console.log('this.$slots.default',this.$slots.default,Column.POSITION.form)
         const columns = this.columns.map(column => {
           return {
-            field: column.config.field,
+            // field: column.config.field,
             vNode: (
               <el-col
                 span={ this.getCols(column.config) }
@@ -56,10 +56,10 @@
             )
           }
         })
-        slots.forEach((column) => {
-          const index = columns.findIndex(item => item.field === column.field)
-          index === -1 ? columns.unshift(column) : columns.splice(index + 1, 0, column)
-        })
+        // slots.forEach((column) => {
+        //   const index = columns.findIndex(item => item.field === column.field)
+        //   index === -1 ? columns.unshift(column) : columns.splice(index + 1, 0, column)
+        // })
         return columns
       },
       renderColumns () {
