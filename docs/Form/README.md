@@ -7,5 +7,8 @@
 
 
 ### Cols
-<d/>
 
+<d/>
+<mydd tag="Form/Simple" style="max-width: 850px;"/>
+<mydd tag="Form/Cols" style="max-width: 850px;"/>
+<mydd tag="Form/mydd" style="max-width: 850px;"/>

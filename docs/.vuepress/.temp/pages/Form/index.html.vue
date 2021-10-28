@@ -2,4 +2,7 @@
 <p>使用form组件快速布局</p>
 <h3 id="cols" tabindex="-1"><a class="header-anchor" href="#cols" aria-hidden="true">#</a> Cols</h3>
 <d/>
+<mydd tag="Form/Simple" style="max-width: 850px;"/>
+<mydd tag="Form/Cols" style="max-width: 850px;"/>
+<mydd tag="Form/mydd" style="max-width: 850px;"/>
 </template>
