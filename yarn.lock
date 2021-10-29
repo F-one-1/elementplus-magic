@@ -951,6 +951,14 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@highlightjs/vue-plugin@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmmirror.com/@highlightjs/vue-plugin/download/@highlightjs/vue-plugin-2.0.1.tgz#8fcc4b0c1a58e40b65db80f8c85c935a08267c13"
+  integrity sha1-j8xLDBpY5Atl24D4yFyTWggmfBM=
+  dependencies:
+    highlight.js "^11.0.1"
+    vue "^3"
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.npmmirror.com/@humanwhocodes/config-array/download/@humanwhocodes/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -4188,10 +4196,15 @@ he@^1.2.0:
   resolved "https://registry.npm.taobao.org/he/download/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha1-hK5l+n6vsWX922FWauFLrwVmTw8=
 
-highlight.js@^10.3.2, highlight.js@^10.7.1:
+highlight.js@^10.7.1:
   version "10.7.3"
   resolved "https://registry.npmmirror.com/highlight.js/download/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha1-aXJy45kTVuQMPKxWanTu9oF1ZTE=
+
+highlight.js@^11.0.1, highlight.js@^11.3.1:
+  version "11.3.1"
+  resolved "https://registry.npmmirror.com/highlight.js/download/highlight.js-11.3.1.tgz#813078ef3aa519c61700f84fe9047231c5dc3291"
+  integrity sha1-gTB47zqlGcYXAPhP6QRyMcXcMpE=
 
 hosted-git-info@^2.1.4:
   version "2.8.9"
@@ -7427,14 +7440,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.nlark.com/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue3-highlightjs@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npmmirror.com/vue3-highlightjs/download/vue3-highlightjs-1.0.5.tgz#10b8e2f2f64873dad0abfad6a8a19106d54f3dc9"
-  integrity sha1-ELji8vZIc9rQq/rWqKGRBtVPPck=
-  dependencies:
-    highlight.js "^10.3.2"
-
-vue@^3.2.3, vue@^3.2.6:
+vue@^3, vue@^3.2.3, vue@^3.2.6:
   version "3.2.20"
   resolved "https://registry.npmmirror.com/vue/download/vue-3.2.20.tgz?cache=0&sync_timestamp=1633712907554&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvue%2Fdownload%2Fvue-3.2.20.tgz#940f8aa8bf3e3be78243ca582bad41fcd45ae3e6"
   integrity sha1-lA+KqL8+O+eCQ8pYK61B/NRa4+Y=
