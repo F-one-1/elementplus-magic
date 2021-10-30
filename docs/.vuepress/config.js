@@ -16,28 +16,17 @@ module.exports = {
       { text: '开发指南', link: '/Form/' },
       { text: '属性说明', link: '/AutoLoading/' },
     ],
-    sidebar: {
-      '/': [
-        'Form/',
-        'Search/',
-        'Table/',
-        'Layer/',
-        'PopoverConfirm/',
-        'Buttons/',
-        'QRCode/',
-        'Clipboard/',
-        'FullScreen/',
-        'Spinner/',
-        'AutoLoading/',
-        'Select/',
-        'SignaturePen/',
-        'Treeselect/',
-        'Drawer/',
-        'Split/',
-        'Print/',
-        'Title/'
-      ]
-    }
+    sidebar: [
+      {
+        text: 'Form',
+        link: '/Form/',
+      },
+      {
+        text: 'Buttons',
+        link: '/Buttons/',
+      },
+    ],
+    sidebarDepth: 1,
   },
   // module: {
   //   rules: {

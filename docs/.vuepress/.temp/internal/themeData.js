@@ -11,28 +11,17 @@ export const themeData = {
       "link": "/AutoLoading/"
     }
   ],
-  "sidebar": {
-    "/": [
-      "Form/",
-      "Search/",
-      "Table/",
-      "Layer/",
-      "PopoverConfirm/",
-      "Buttons/",
-      "QRCode/",
-      "Clipboard/",
-      "FullScreen/",
-      "Spinner/",
-      "AutoLoading/",
-      "Select/",
-      "SignaturePen/",
-      "Treeselect/",
-      "Drawer/",
-      "Split/",
-      "Print/",
-      "Title/"
-    ]
-  },
+  "sidebar": [
+    {
+      "text": "Form",
+      "link": "/Form/"
+    },
+    {
+      "text": "Buttons",
+      "link": "/Buttons/"
+    }
+  ],
+  "sidebarDepth": 1,
   "locales": {
     "/": {
       "selectLanguageName": "English"
@@ -41,7 +30,6 @@ export const themeData = {
   "darkMode": true,
   "selectLanguageText": "Languages",
   "selectLanguageAriaLabel": "Select language",
-  "sidebarDepth": 2,
   "editLink": true,
   "editLinkText": "Edit this page",
   "lastUpdated": true,

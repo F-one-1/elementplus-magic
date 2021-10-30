@@ -3,7 +3,9 @@ export const data = {
   "path": "/Form/",
   "title": "Form",
   "lang": "en-US",
-  "frontmatter": {},
+  "frontmatter": {
+    "pageClass": "large-page"
+  },
   "excerpt": "",
   "headers": [
     {
@@ -11,16 +13,46 @@ export const data = {
       "title": "Cols",
       "slug": "cols",
       "children": []
+    },
+    {
+      "level": 3,
+      "title": "LabelPosition",
+      "slug": "labelposition",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "FormColumn清单文件",
+      "slug": "formcolumn清单文件",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "FormConfig",
+      "slug": "formconfig",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "FormColumn",
+      "slug": "formcolumn",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "FormEvents",
+      "slug": "formevents",
+      "children": []
     }
   ],
   "filePathRelative": "Form/README.md",
   "git": {
-    "updatedTime": 1635430950000,
+    "updatedTime": 1635517611000,
     "contributors": [
       {
         "name": "“F-one-1”",
         "email": "fy1033409628@163.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   }

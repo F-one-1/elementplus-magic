@@ -1,46 +1,14 @@
 <template>
-<div>1</div>
   <div class="code">
     <div class="code-content" v-if="component">
       <component :is="currentLayout" />
-    </div>
-    <div
-      class="code--segment"
-      v-if="isShow">
-      <pre v-pre>
-        <code class="html">
-          <div>1</div>
-        </code>
-      </pre>
-      <!-- <div v-html="rawHtml">
-        {{rawHtml}}
-      </div> -->
-      <!-- <div v-html="currentCode">
-      </div> -->
-      <!-- <pre v-highlightjs="currentCode">
-        <code class="vue"></code>
-      </pre>
-      <pre v-highlightjs>
-        <code class="vue">
-          {{ currentCode }}
-        </code>
-      </pre>
-      <code :lang="suffix">
-        {{ currentCode }}
-      </code>
-      <highlight-code :lang="suffix">
-        {{ currentCode }}
-      </highlight-code> -->
-    </div>
-    <div class="code--button" @click="onToggle">
-      {{ codeTextBtn }}
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'mydd',
+  name: 'mycode',
   props: {
       tag: {
         type: String,

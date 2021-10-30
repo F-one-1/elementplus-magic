@@ -1,7 +1,6 @@
 <template>
-  <div>1</div>
-  <el-row :gutter="gutter">
-    <el-col v-for="column in columns" :key="column"
+  <el-row :gutter="gutter" v-for="column in columns" :key="column">
+    <el-col 
         :span="getCols(column.config)"
         :style="column.config.colStyle"
         class="magic-form-col">
@@ -14,7 +13,7 @@
             :style="column.config.style || column.config.width || '100%'"
             :onInput="oninput"
             :source="getSource(column.config)"
-            :value="getValue(column.config)"
+            :modelValue="getValue(column.config)"
             :layout="column.config.layout"
             :events="column.events"
             :prop="column.props"

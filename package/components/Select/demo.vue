@@ -55,7 +55,7 @@ export default {
   name: 'MgSelect',
   emits: ['click.stop'],
   props: {
-    value: {},
+    modelValue: {},
     source: {
         type: Array,
         default: () => []
@@ -70,17 +70,17 @@ export default {
       },
       outputKey: {
         type: String,
-        default: 'value'
+        default: 'modelValue'
       }
   },
-  setup(props,{emit}) {
+  setup(props,{context}) {
     var currentValue = computed({
       get() {
-        if (!props.multiple) return props.value
-        return props.value || []
+        if (!props.multiple) return props.modelValue
+        return props.modelValue || []
       },
       set(val) {
-        emit('input', val)
+        context.emit("update:modelValue", val);
       }
     })
     const isIndeterminate = computed(()=>{
