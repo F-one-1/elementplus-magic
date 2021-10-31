@@ -18,8 +18,13 @@
 
 <script>
   import basic from './basic.js'
-
+  import { ref } from "@vue/reactivity";
   export default {
-    mixins: [basic]
+    mixins: [basic],
+    setup() {
+      return {
+        currentValue: ref('')
+      }
+    }
   }
 </script>

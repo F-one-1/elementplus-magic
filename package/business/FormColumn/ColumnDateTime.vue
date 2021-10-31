@@ -8,10 +8,16 @@
 
 <script>
   import basic from './basic.js'
+  import { ref } from "@vue/reactivity";
   import { ShortCuts } from '../../utils/shortcuts.js'
 
   export default {
     mixins: [basic],
+    setup() {
+      return {
+        currentValue: ref([])
+      }
+    },
     computed: {
       currentProps() {
         const { pickerOptions } = this.props

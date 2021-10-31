@@ -4,15 +4,22 @@
     v-bind="currentProps"
     v-on="currentEvents"
   />
+  
 </template>
 
 <script>
   import merge from 'lodash/merge'
   import basic from './basic.js'
+  // import { ref } from "@vue/reactivity";
   import { ShortCuts } from '../../utils/shortcuts.js'
 
   export default {
     mixins: [basic],
+    setup() {
+      return {
+        // currentValue: ref([])
+      }
+    },
     computed: {
       currentProps() {
         return merge({

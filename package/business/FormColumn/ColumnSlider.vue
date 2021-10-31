@@ -9,9 +9,14 @@
 
 <script>
   import basic from './basic.js'
-
+  import { ref } from "@vue/reactivity";
   export default {
     mixins: [basic],
+    setup() {
+      return {
+        currentValue: ref([])
+      }
+    },
     computed: {
       currentValue: {
         get() {

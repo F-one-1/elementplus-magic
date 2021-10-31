@@ -3,9 +3,19 @@
     style="width: 240px;"
     v-model="select"
     :source="source"
+    labelKey="name"
+    valueKey="id"
+    outputKey="id"
     collapse-tags
-    multiple
-  />
+    >
+    <template
+      v-slot="{row}">
+      <div class="row">
+        <label>{{ row.name }}</label>
+        <span>{{ row.department }}</span>
+      </div>
+    </template>
+  </mg-select>
 </template>
 
 <script>
@@ -15,23 +25,39 @@
         select: [],
         source: [
           {
-            label: '一级隐患',
-            value: 1
+            id: 1,
+            name: '张三',
+            department: '技术室'
           },
           {
-            label: '二级隐患',
-            value: 2
+            id: 2,
+            name: '李四',
+            department: '掘进部'
           },
           {
-            label: '三级隐患',
-            value: 3
-          },
-          {
-            label: '四级隐患',
-            value: 4
+            id: 3,
+            name: '王五',
+            department: '调度室'
           }
         ]
       }
     }
   }
 </script>
+
+<style scoped>
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .row  label {
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  .row span{
+    margin: 0 0 0 10px;
+  }
+</style>

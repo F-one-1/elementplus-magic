@@ -8,7 +8,7 @@ import * as utils from './utils'
 // import * as decorator from './decorator'
 // import Button from './components/button/Button.vue'
 import Button from './components/Buttons/index.vue'
-import Select from './components/Select/demo.vue'
+import Select from './components/Select/elSelect.vue'
 
 import button from './components/Button/index.vue'
 import PopConfirm from './components/PopConfirm/index.vue'

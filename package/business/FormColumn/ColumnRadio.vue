@@ -18,9 +18,15 @@
 <script>
   import basic from './basic.js'
   import get from 'lodash/get'
+  import { ref } from "@vue/reactivity";
 
   export default {
     mixins: [basic],
+    setup() {
+      return {
+        currentValue: ref('')
+      }
+    },
     computed: {
       currentLabelKey() {
         return this.props.labelKey || 'label'

@@ -21,7 +21,7 @@
             { label: '隐患级别', field: 'level', layout: 'Select', source: 'level' },
             { label: '检查时间', field: 'date', layout: 'Date' },
             { label: '隐患类别', field: 'category', layout: 'Select', source: 'category', multiple: true },
-            { label: '整改部门', field: 'department', layout: 'TreeSelect', source: 'department' },
+            { label: '整改部门', field: 'department', layout: 'Time', source: 'department' },
           ],
           events: {
             init: () => {

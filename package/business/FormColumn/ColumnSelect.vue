@@ -10,14 +10,15 @@
 <script>
   import basic from './basic.js'
   import { ref } from "@vue/reactivity";
-  import MgSelect from '../../components/Select/demo.vue'
+  import MgSelect from '../../components/Select/elSelect.vue'
 
   export default {
     mixins: [basic],
     components: { MgSelect },
     setup(){
       return {
-        currentValue: ref(''),
+        currentValue: ref([]),
+        // source: ref([])
       }
     },
     computed: {

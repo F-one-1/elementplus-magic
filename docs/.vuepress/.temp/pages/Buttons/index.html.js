@@ -59,8 +59,14 @@ export const data = {
   ],
   "filePathRelative": "Buttons/README.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1635605846000,
+    "contributors": [
+      {
+        "name": "“F-one-1”",
+        "email": "fy1033409628@163.com",
+        "commits": 1
+      }
+    ]
   }
 }
 
