@@ -3,8 +3,8 @@
     v-model="currentValue"
     v-bind="currentProps"
     v-on="currentEvents"
+    style="width:100%"
   />
-  <el-date-picker v-model="value1" type="date" placeholder="Pick a day"/>
 </template>
 
 <script>
@@ -16,8 +16,7 @@
     mixins: [basic],
     setup() {
       return {
-        currentValue: ref([]),
-        value1: ref('')
+        currentValue: ref([])
       }
     },
     computed: {
@@ -28,7 +27,7 @@
           type: 'date',
           placeholder: `请选择${ this.currentLabel }`,
           // pickerOptions: Object.assign({ shortcuts: ShortCuts.date }, pickerOptions),
-          // ...this.props
+          ...this.props
         }
       }
     }

@@ -4,6 +4,7 @@
     v-model="currentValue"
     v-bind="currentProps"
     v-on="currentEvents"
+    style="width:100%"
   />
 </template>
 

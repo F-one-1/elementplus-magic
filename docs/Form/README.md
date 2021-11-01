@@ -11,7 +11,7 @@ pageClass: large-page
 <d/>
 ### 基础用法
 
-<mycode tag="Form/Simple" style="max-width: 850px;"/>
+<!-- <mycode tag="Form/Simple" style="max-width: 850px;"/> -->
 
 ```vue
 <template>
@@ -55,7 +55,7 @@ pageClass: large-page
 
 ### Cols
 
-<mycode tag="Form/Cols" style="max-width: 850px;"/>
+<!-- <mycode tag="Form/Cols" style="max-width: 850px;"/> -->
 
 ```vue
 <template>
@@ -110,7 +110,7 @@ pageClass: large-page
 :::
 
 
-<mycode tag="Form/LabelPosition" style="max-width: 850px;"/>
+<!-- <mycode tag="Form/LabelPosition" style="max-width: 850px;"/> -->
 
 ```vue
 <template>

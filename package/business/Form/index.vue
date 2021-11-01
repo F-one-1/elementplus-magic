@@ -1,5 +1,5 @@
 <template>
-  <AutoLoading
+  <auto-loading
     class="magic-form"
     :class="[{ 'hide-bottom': currentHideBottom }, `is-${ currentFormSize }`]"
     @load="onCreate">
@@ -41,7 +41,7 @@
             size="small"
             @click="onCancel"
             v-if="currentCancelText">
-            {{ currentCancelText }}
+            {{ currentCancelText }} 1
           </el-button>
           <template
             v-if="currentConfirmText">
@@ -54,7 +54,7 @@
                 size="small"
                 :loading="currentUseLoading ? loading : false"
                 type="primary">
-                {{ currentConfirmText }}
+                {{ currentConfirmText }} 2
               </el-button>
             </el-popconfirm>
             <el-button
@@ -65,13 +65,13 @@
               :loading="currentUseLoading ? loading : false"
               type="primary"
               size="small">
-              {{ currentConfirmText }}
+              {{ currentConfirmText }} 3
             </el-button>
           </template>
         </span>
       </div>
     </el-form>
-  </AutoLoading>
+  </auto-loading>
 </template>
 
 <script type="text/jsx">
@@ -86,7 +86,6 @@
     components: {
       FormColumns,
       AutoLoading,
-
     },
     props: {
       options: {}

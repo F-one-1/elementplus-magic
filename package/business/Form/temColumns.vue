@@ -1,6 +1,11 @@
 <template>
-  <el-row :gutter="gutter" v-for="column in columns" :key="column">
-    <el-col 
+  <el-row>
+    <el-col :span="24">
+      <el-select style="width:100%"></el-select>
+    </el-col>
+  </el-row>
+  <el-row :gutter="gutter">
+    <el-col v-for="(column) in columns" :key="column"
         :span="getCols(column.config)"
         :style="column.config.colStyle"
         class="magic-form-col">
@@ -42,6 +47,7 @@ export default {
       return this.store.setValue(field, val)
     },
     getCols ({ cols }) {
+      console.log('ddd',cols)
       return cols || this.cols
     },
     getSource ({ source }) {

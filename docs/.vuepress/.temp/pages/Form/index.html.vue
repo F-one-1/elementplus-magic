@@ -3,7 +3,7 @@
 <nav class="table-of-contents"><ul><li><RouterLink to="#cols">Cols</RouterLink></li><li><RouterLink to="#labelposition">LabelPosition</RouterLink></li><li><RouterLink to="#formcolumn清单文件">FormColumn清单文件</RouterLink></li><li><RouterLink to="#formconfig">FormConfig</RouterLink></li><li><RouterLink to="#formcolumn">FormColumn</RouterLink></li><li><RouterLink to="#formevents">FormEvents</RouterLink></li></ul></nav>
 <d/>
 ### 基础用法
-<mycode tag="Form/Simple" style="max-width: 850px;"/>
+<!-- <mycode tag="Form/Simple" style="max-width: 850px;"/> -->
 <div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mg-form</span> <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
@@ -41,7 +41,7 @@
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h3 id="cols" tabindex="-1"><a class="header-anchor" href="#cols" aria-hidden="true">#</a> Cols</h3>
-<mycode tag="Form/Cols" style="max-width: 850px;"/>
+<!-- <mycode tag="Form/Cols" style="max-width: 850px;"/> -->
 <div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mg-form</span> <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
@@ -89,7 +89,7 @@
 <p>默认情况下，label的位置位于表单的上方，主要是为了解决label长度不齐整的情况<br/>
 在label的名称相对规整情况下，可以设置<code>labelPosition</code>为<code>right</code></p>
 </div>
-<mycode tag="Form/LabelPosition" style="max-width: 850px;"/>
+<!-- <mycode tag="Form/LabelPosition" style="max-width: 850px;"/> -->
 <div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mg-form</span> <span class="token attr-name">:options</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>options<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>

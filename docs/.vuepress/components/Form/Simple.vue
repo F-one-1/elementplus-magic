@@ -11,6 +11,7 @@
       return {
         options: new model.Form({
           columns: [
+            { label: '隐患类别', field: 'category', layout: 'Select', source: 'category', multiple: true },
             { label: '隐患内容', field: 'desc', layout: 'Textarea' },
             { label: '隐患单号', field: 'number', layout: 'Text' },
             { label: '隐患Switch', field: 'number1', layout: 'Switch' },

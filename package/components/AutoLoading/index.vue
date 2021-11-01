@@ -3,7 +3,7 @@
     <slot
       v-if="loaded"
     />
-    <Spinner
+    <mg-spinner
       class="magic-autoLoading-spinner"
       :class="`is-${ position }`"
       v-bind="$attrs"
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import Spinner from '../Spinner/index.vue'
+  import MgSpinner from '../Spinner/index.vue'
 
   const Hook = {
     activeated: 'activeated',
@@ -21,8 +21,8 @@
   }
 
   export default {
-    name: 'MgAutoLoading',
-    components: { Spinner },
+    name: 'AutoLoading',
+    components: { MgSpinner },
     props: {
       hook: {
         type: String,
