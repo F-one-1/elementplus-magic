@@ -10,14 +10,38 @@ export const data = {
   "headers": [
     {
       "level": 3,
-      "title": "Cols",
-      "slug": "cols",
+      "title": "基础用法 (组件样例)",
+      "slug": "基础用法-组件样例",
       "children": []
     },
     {
       "level": 3,
-      "title": "LabelPosition",
-      "slug": "labelposition",
+      "title": "Cols (组件样例)",
+      "slug": "cols-组件样例",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "LabelPosition (组件样例)",
+      "slug": "labelposition-组件样例",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "自定义column",
+      "slug": "自定义column",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "校验规则清单",
+      "slug": "校验规则清单",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "示例数据清单",
+      "slug": "示例数据清单",
       "children": []
     },
     {
@@ -47,12 +71,12 @@ export const data = {
   ],
   "filePathRelative": "Form/README.md",
   "git": {
-    "updatedTime": 1635605846000,
+    "updatedTime": 1635777713000,
     "contributors": [
       {
         "name": "“F-one-1”",
         "email": "fy1033409628@163.com",
-        "commits": 5
+        "commits": 6
       }
     ]
   }

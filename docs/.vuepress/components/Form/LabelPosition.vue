@@ -11,17 +11,20 @@
       return {
         options: new model.Form({
           config: {
+            rules:{
+              desc: true
+            },
             cols: 12,
             labelWidth: '80px',
             labelPosition: 'right'
           },
           columns: [
-            { label: '隐患内容', field: 'desc', layout: 'Textarea', cols: 24 },
-            { label: '隐患单号', field: 'number', layout: 'Text' },
-            { label: '隐患级别', field: 'level', layout: 'Select', source: 'level' },
-            { label: '检查时间', field: 'date', layout: 'Date' },
-            { label: '隐患类别', field: 'category', layout: 'Select', source: 'category', multiple: true },
-            { label: '整改部门', field: 'department', layout: 'TreeSelect', source: 'department' },
+            { label: 'Textarea', field: 'desc', layout: 'Textarea', cols: 24 , required: true},
+            { label: 'Textarea', field: 'desc', layout: 'Textarea', cols: 24 , placeholder: '你可以输入任何默认值' },
+            { label: 'Text', field: 'number', layout: 'Text' },
+            { label: 'Select', field: 'level', layout: 'Select', source: 'level' },
+            { label: 'Date', field: 'date', layout: 'Date' },
+            { label: 'Select', field: 'category', layout: 'Select', source: 'category', multiple: true },
           ],
           events: {
             init: () => {

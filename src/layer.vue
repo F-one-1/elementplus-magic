@@ -5,7 +5,8 @@
       type="primary">
       打开弹框
     </el-button>
-    <mg-layer ref="layer">
+    <mg-layer 
+      ref="layer">
       <mg-form :options="options"/>
     </mg-layer>
   </div>
@@ -25,7 +26,10 @@
             { label: '隐患级别', field: 'level', layout: 'Date' }
           ],
           events: {
-            cancel: () => this.$refs.layer.onClose()
+            cancel: () => this.$refs.layer.onClose(),
+            submit: (form, done) => {
+              setTimeout(done, 1000)
+            }
           }
         })
       }

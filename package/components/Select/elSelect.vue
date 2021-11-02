@@ -3,6 +3,7 @@
     class="magic-select"
     :multiple="multiple"
     v-model="currentValue"
+    placeholder=""
     style="width:100%"
     v-bind="$attrs">
     <template v-if="multiple">

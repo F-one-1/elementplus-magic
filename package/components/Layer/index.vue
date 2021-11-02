@@ -92,7 +92,7 @@
   import { throttle } from '../../utils/throttle.js'
   import { getLayerIndex } from '../../utils/getLayerIndex'
   import { tools as Tools } from '../../global'
-  import VueDraggableResizable from 'vue-draggable-resizable'
+  import VueDraggableResizable from "vue-draggable-resizable/src/components/vue-draggable-resizable.vue";
 
   const Size = [800, 500]
 
@@ -103,7 +103,7 @@
       title: {
         type: String
       },
-      value: {
+      modelValue: {
         type: Boolean
       },
       width: {
@@ -188,7 +188,7 @@
         currentStyle: null,
         currentWidth: Size[0],
         currentHeight: Size[1],
-        currentValue: this.value,
+        currentValue: this.modelValue,
         currentTitle: this.title,
         currentLoading: false
       }
@@ -208,11 +208,9 @@
     },
     methods: {
       onShow({ title } = {}) {
-        console.log('触发show')
         this.currentValue = true
-        console.log(this.currentValue)
         this.currentTitle = title || this.currentTitle
-        this.$emit('input', true)
+        this.$emit('update:modelValue', true)
       },
       onHide() {
         if (!this.maskAllowOff) return
@@ -277,10 +275,10 @@
           this.parseHeight()
         }
       },
-      value: {
+      modelValue: {
         immediate: true,
         handler() {
-          this.currentValue = this.value
+          this.currentValue = this.modelValue
         }
       },
       title: {

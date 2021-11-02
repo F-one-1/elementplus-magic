@@ -1,7 +1,4 @@
 <template>
-  <div v-for="item in [1,2,3]" :key="item">
-    1
-  </div>
   <div class="code">
     <div class="code-content">
       <mg-form :options="options"/>
@@ -51,6 +48,8 @@
               this.options.setSource('department', data.department)
             },
             submit: (form, done) => {
+              console.log('提交按钮带点击')
+              console.log(form)
               setTimeout(done, 1000)
             }
           }

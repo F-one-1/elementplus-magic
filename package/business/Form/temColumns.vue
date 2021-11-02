@@ -1,9 +1,4 @@
 <template>
-  <el-row>
-    <el-col :span="24">
-      <el-select style="width:100%"></el-select>
-    </el-col>
-  </el-row>
   <el-row :gutter="gutter">
     <el-col v-for="(column) in columns" :key="column"
         :span="getCols(column.config)"

@@ -16,8 +16,8 @@ export let printjs = null
 export let vue = app
 
 export let tools = {
-  ElMessageBox: ElMessageBox,
-  ElNotification: ElNotification
+  MessageBox: ElMessageBox,
+  Notification: ElNotification
 }
 
 export default {

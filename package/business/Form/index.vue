@@ -41,7 +41,7 @@
             size="small"
             @click="onCancel"
             v-if="currentCancelText">
-            {{ currentCancelText }} 1
+            {{ currentCancelText }} 
           </el-button>
           <template
             v-if="currentConfirmText">
@@ -54,7 +54,7 @@
                 size="small"
                 :loading="currentUseLoading ? loading : false"
                 type="primary">
-                {{ currentConfirmText }} 2
+                {{ currentConfirmText }} 
               </el-button>
             </el-popconfirm>
             <el-button
@@ -65,7 +65,7 @@
               :loading="currentUseLoading ? loading : false"
               type="primary"
               size="small">
-              {{ currentConfirmText }} 3
+              {{ currentConfirmText }} 
             </el-button>
           </template>
         </span>

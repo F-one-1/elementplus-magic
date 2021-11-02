@@ -42,7 +42,7 @@
       <div
         v-if="$slots.footer"
         class="magic-drawer-footer">
-        <slot name="footer"/>
+        <slot name="footer"></slot>
       </div>
     </div>
   </div>

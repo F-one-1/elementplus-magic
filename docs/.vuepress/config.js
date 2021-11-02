@@ -25,6 +25,18 @@ module.exports = {
         text: 'Buttons',
         link: '/Buttons/',
       },
+      {
+        text: 'Layer',
+        link: '/Layer/',
+      },
+      {
+        text: 'Drawer',
+        link: '/Drawer/',
+      },
+      {
+        text: '更多相关',
+        link: '/demo/',
+      },
     ],
     sidebarDepth: 1,
   },
