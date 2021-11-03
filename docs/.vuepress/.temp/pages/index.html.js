@@ -44,12 +44,12 @@ export const data = {
   ],
   "filePathRelative": "README.md",
   "git": {
-    "updatedTime": 1635083550000,
+    "updatedTime": 1635951479000,
     "contributors": [
       {
         "name": "“F-one-1”",
         "email": "fy1033409628@163.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

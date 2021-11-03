@@ -18,13 +18,14 @@ features:
 ---
 
 ### 快速集成
-```js
-import Vue from 'vue'
-import magic from 'magic'
 
-Vue.use(magic)
+同时还需要引入element-plus
+```js
+import magic from 'elementplus-magic'
+
+app.use(magic)
 ```
 
 ::: warning 注意
-请确保你的 Node.js 版本 >= 8.6。 
+请确保你的 Node.js 版本 >= 12.6。 
 :::
