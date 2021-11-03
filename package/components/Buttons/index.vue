@@ -14,7 +14,6 @@ import { computed, ref, toRefs } from '@vue/reactivity'
   import icon from './icon.vue'
 
   const component = ref({ button, icon })
-
   export default {
     name: 'MgButtons',
     props: {

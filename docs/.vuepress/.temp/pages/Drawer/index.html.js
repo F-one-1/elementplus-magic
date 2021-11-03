@@ -53,8 +53,14 @@ export const data = {
   ],
   "filePathRelative": "Drawer/README.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1635865069000,
+    "contributors": [
+      {
+        "name": "“F-one-1”",
+        "email": "fy1033409628@163.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

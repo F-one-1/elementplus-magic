@@ -24,20 +24,14 @@ export default {
   use (_vue, props = {}) {
     const {
       xlsx: _xlsx,
-      qrcodejs2: _qrcodejs2,
       sortablejs: _sortablejs,
-      clipboard: _clipboard,
-      printjs: _printjs,
       config: _config,
       tools: _tools
     } = props
     Object.assign(config, _config)
     Object.assign(tools, _tools)
     xlsx = _xlsx
-    qrcodejs2 = _qrcodejs2
     sortablejs = _sortablejs
-    clipboard = _clipboard
-    printjs = _printjs
     vue = _vue
   }
 }
