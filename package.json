@@ -1,12 +1,16 @@
 {
-  "name": "myindex",
-  "version": "0.1.0",
-  "private": true,
+  "name": "elementplus-magic",
+  "version": "1.0.3",
+  "main": "./dist/magic.umd.min.js",
+  "private": false,
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name magic ./package/build.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

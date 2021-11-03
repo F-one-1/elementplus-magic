@@ -11,6 +11,11 @@ export const data = {
         "text": "快速开始",
         "link": "/Form/",
         "type": "primary"
+      },
+      {
+        "text": "关于我",
+        "link": "/demo/",
+        "type": "secondary"
       }
     ],
     "features": [
@@ -26,8 +31,7 @@ export const data = {
         "title": "内置适配器",
         "details": "内置多种适配器，轻松对接后台。"
       }
-    ],
-    "footer": "版权所有@华夏天信（北京）智能低碳技术研究院有限公司"
+    ]
   },
   "excerpt": "",
   "headers": [

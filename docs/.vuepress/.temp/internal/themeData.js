@@ -7,7 +7,7 @@ export const themeData = {
       "link": "/Form/"
     },
     {
-      "text": "属性说明",
+      "text": "项目相关",
       "link": "/AutoLoading/"
     }
   ],

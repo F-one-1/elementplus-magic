@@ -14,7 +14,7 @@ module.exports = {
     repo: 'https://github.com/F-one-1/Vue3-elementPlus-magic',
     navbar: [
       { text: '开发指南', link: '/Form/' },
-      { text: '属性说明', link: '/AutoLoading/' },
+      { text: '项目相关', link: '/AutoLoading/' },
     ],
     sidebar: [
       {

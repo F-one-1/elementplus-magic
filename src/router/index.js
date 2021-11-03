@@ -5,12 +5,9 @@ const login = () => import("../login.vue")
 const select = () => import("../Select.vue")
 const drawer = () => import("../drawer.vue")
 // const clipboard = () => import("../clipBoard.vue")
-const popconfirm = () => import("../popconfirm.vue")
 const autoloading = () => import("../AutoLoading.vue")
 const form = () => import("../Form.vue")
-const treeselect = () => import("../treeselect.vue")
 const layer = () => import("../layer.vue")
-const vuedr = () => import("../vueDR.vue")
 const demo = () => import("../demo.vue")
 const routes = [
   {
@@ -29,11 +26,6 @@ const routes = [
     component: select
   },
   {
-    path: "/popconfirm",
-    name: "popconfirm",
-    component: popconfirm
-  },
-  {
     path: "/drawer",
     name: "drawer",
     component: drawer
@@ -49,19 +41,9 @@ const routes = [
     component: form
   },
   {
-    path: "/treeselect",
-    name: "treeselect",
-    component: treeselect
-  },
-  {
     path: "/layer",
     name: "layer",
     component: layer
-  },
-  {
-    path: "/vuedr",
-    name: "vuedr",
-    component: vuedr
   },
   {
     path: "/demo",
