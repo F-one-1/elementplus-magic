@@ -1,13 +1,13 @@
 export const themeData = {
-  "logo": "/logo.jpg",
-  "repo": "https://github.com/F-one-1/Vue3-elementPlus-magic",
+  "logo": "/newlogo.jpg",
+  "repo": "https://github.com/F-one-1/elementplus-magic",
   "navbar": [
     {
-      "text": "开发指南",
+      "text": "快速开始",
       "link": "/Form/"
     },
     {
-      "text": "项目相关",
+      "text": "🦏🐂",
       "link": "/AutoLoading/"
     }
   ],

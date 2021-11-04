@@ -1,7 +1,4 @@
 import { ElNotification,ElMessageBox } from 'element-plus'
-import { createApp } from 'vue'
-
-const app = createApp({})
 export const config = {}
 
 export let xlsx = null
@@ -13,8 +10,6 @@ export let sortablejs = null
 export let clipboard = null
 
 export let printjs = null
-
-export let vue = app
 
 export let tools = {
   MessageBox: ElMessageBox,
@@ -33,6 +28,5 @@ export default {
     Object.assign(tools, _tools)
     xlsx = _xlsx
     sortablejs = _sortablejs
-    vue = _vue
   }
 }

@@ -1,14 +1,14 @@
 export const siteData = {
-  "base": "/magic/",
+  "base": "/elementplus-magic/",
   "lang": "en-US",
-  "title": "magic",
+  "title": "elementplus-magic",
   "description": "基于 ElementUI 开发的一套高效的 UI 组件",
   "head": [
     [
       "link",
       {
         "rel": "icon",
-        "href": "/logo.jpg"
+        "href": "/newlogo.jpg"
       }
     ]
   ],

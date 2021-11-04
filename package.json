@@ -1,8 +1,13 @@
 {
   "name": "elementplus-magic",
-  "version": "1.0.3",
-  "main": "./dist/magic.umd.min.js",
+  "version": "1.0.6",
+  "main": "./dist/elementplus-magic.umd.min.js",
   "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/F-one-1/elementplus-magic"
+  },
   "files": [
     "dist/*"
   ],
@@ -10,7 +15,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name magic ./package/build.js",
+    "build": "vue-cli-service build --target lib --name elementplus-magic ./package/build.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
