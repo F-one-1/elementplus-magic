@@ -2,19 +2,19 @@ const path = require('path')
 
 module.exports = {
   // plugins: ["@vue/babel-plugin-jsx"],
-  title: 'magic',
-  base: '/magic/',
+  title: 'elementplus-magic',
+  base: '/elementplus-magic/',
   description: '基于 ElementUI 开发的一套高效的 UI 组件',
   dest: './dist',
   head: [
-    ['link', { rel: 'icon', href: `/logo.jpg` }]
+    ['link', { rel: 'icon', href: `/newlogo.jpg` }]
   ],
   themeConfig: {
-    logo: '/logo.jpg',
-    repo: 'https://github.com/F-one-1/Vue3-elementPlus-magic',
+    logo: '/newlogo.jpg',
+    repo: 'https://github.com/F-one-1/elementplus-magic',
     navbar: [
-      { text: '开发指南', link: '/Form/' },
-      { text: '项目相关', link: '/AutoLoading/' },
+      { text: '快速开始', link: '/Form/' },
+      { text: '🦏🐂', link: '/AutoLoading/' },
     ],
     sidebar: [
       {
