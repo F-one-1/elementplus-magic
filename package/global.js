@@ -1,5 +1,6 @@
 import { ElNotification,ElMessageBox } from 'element-plus'
 import { createApp } from 'vue'
+
 const app = createApp({})
 export const config = {}
 

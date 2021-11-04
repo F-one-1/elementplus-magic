@@ -31,11 +31,11 @@ export {
   utils,
 }
 export default {
-  install (vue) {
-    global.use(vue)
+  install (app) {
+    global.use(app)
     // basic.forEach(v => Vue.component(v.name, v))
     // business.forEach(v => Vue.component(v.name, v))
-    components.forEach(v => vue.component(v.name, v))
-    vue.mixin(utils.mixinOptions(vue))
+    components.forEach(v => app.component(v.name, v))
+    app.mixin(utils.mixinOptions(app))
   }
 }
