@@ -1,5 +1,6 @@
 # elementplus-magic
 
+## **[文档](https://f-one-1.github.io/elementplus-magic/)** 
 
 ## 开发环境
 
@@ -18,3 +19,4 @@ yarn run build
 
 ### 开发-文档
 yarn run docs:dev
+
