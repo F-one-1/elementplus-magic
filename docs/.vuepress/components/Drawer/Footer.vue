@@ -8,7 +8,7 @@
     <mg-drawer
       title="Basic Drawer"
       v-model="value">
-      <span slot="footer">
+      <template v-slot:footer>
         <el-button
           size="small">
           取消
@@ -18,10 +18,12 @@
           type="primary">
           确定
         </el-button>
-      </span>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
+      </template>
+      <template v-slot:body>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </template>
     </mg-drawer>
   </div>
 </template>

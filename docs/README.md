@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /newlogo.jpg
+heroImage: /goodlogo.jpg
 actions:
   - text: 快速开始
     link: /Form/
@@ -18,17 +18,16 @@ features:
 ---
 
 ### 快速集成
-::: waring说明
-同时还需要引入element-plus
+::: warning 说明
+需要同时引入element-plus
 :::
 ```js
-import magic from 'elementplus-magic'
+import elementplusMagic from 'elementplus-magic'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 app.use(ElementPlus)
-app.use(magic)
+app.use(elementplusMagic)
 ```
-
 ::: warning 注意
 请确保你的 Node.js 版本 >= 12.6。 
 :::

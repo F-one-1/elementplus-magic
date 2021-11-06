@@ -5,7 +5,7 @@ export const data = {
   "lang": "en-US",
   "frontmatter": {
     "home": true,
-    "heroImage": "/newlogo.jpg",
+    "heroImage": "/goodlogo.jpg",
     "actions": [
       {
         "text": "快速开始",
@@ -53,17 +53,4 @@ export const data = {
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

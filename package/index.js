@@ -20,9 +20,6 @@ let components = [
   // demo
 ]
 
-// if (typeof window !== 'undefined' && window.Vue) {
-//   install(window.Vue);
-// }
 export {
   model,
   utils,

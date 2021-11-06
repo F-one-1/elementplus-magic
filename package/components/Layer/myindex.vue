@@ -20,8 +20,8 @@
         :handles="handles"
         :w="currentWidth"
         :h="currentHeight"
-        :x="currentX"
-        :y="currentY"
+        :x="X"
+        :y="Y"
         :minWidth="minWidth"
         :minHeight="minHeight"
         v-if="currentValue"
@@ -188,20 +188,22 @@
         currentStyle: null,
         currentWidth: Size[0],
         currentHeight: Size[1],
+        X: 0,
+        Y: 0,
         currentValue: this.value,
         currentTitle: this.title,
         currentLoading: false
       }
     },
     computed: {
-      currentX() {
-        const x = (window.innerWidth - this.currentWidth) / 2
-        return parseSize(this.left, window.innerWidth, x)
-      },
-      currentY() {
-        const y = (window.innerHeight - this.currentHeight) / 2
-        return parseSize(this.top, window.innerHeight, Math.max(y - 50, y))
-      },
+      // currentX() {
+      //   const x = (document.body.offsetWidth- this.currentWidth) / 2
+      //   return parseSize(this.left, document.body.offsetWidth, x)
+      // },
+      // currentY() {
+      //   const y = (document.documentElement.clientHeight - this.currentHeight) / 2
+      //   return parseSize(this.top, document.documentElement.clientHeight, Math.max(y - 50, y))
+      // },
       currentZ() {
         return getLayerIndex()
       }
@@ -211,6 +213,14 @@
         this.currentValue = true
         this.currentTitle = title || this.currentTitle
         this.$emit('input', true)
+      },
+      currentY() {
+        const y = (window.innerHeight - this.currentHeight) / 2
+        this.Y = parseSize(this.top, window.innerHeight, Math.max(y - 50, y))
+      },
+      currentX() {
+        const x = (window.innerWidth- this.currentWidth) / 2
+        this.X = parseSize(this.left, window.innerWidth, x)
       },
       onHide() {
         if (!this.maskAllowOff) return
@@ -294,6 +304,8 @@
       if (this.appendToBody) {
         document.body.appendChild(this.$el)
       }
+      this.currentX()
+      this.currentY()
     },
     unmounted() {
       window.removeEventListener('resize', this.throttle)

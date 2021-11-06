@@ -1,4 +1,10 @@
-<template><h3 id="自我介绍" tabindex="-1"><a class="header-anchor" href="#自我介绍" aria-hidden="true">#</a> 自我介绍</h3>
+<template><div class="custom-container warning"><p class="custom-container-title">说明</p>
+<p>非常不幸的是，当我npm上传打包组件之后。在测试项目引入组件之后。组件的样式发生了部分丢失。form组件中的column中的元素失去响应性。 so bad thing.</p>
+<p>-- 2021-11-6</p>
+<p>查找了stackoverflow,但依旧没有很好的解决.</p>
+<p>依然在寻找解决方法，直到问题解决</p>
+</div>
+<h3 id="自我介绍" tabindex="-1"><a class="header-anchor" href="#自我介绍" aria-hidden="true">#</a> 自我介绍</h3>
 <p><strong>一名前端新柚（￣。。￣），23届。正在找实习，求推</strong></p>
 <h3 id="项目相关" tabindex="-1"><a class="header-anchor" href="#项目相关" aria-hidden="true">#</a> 项目相关</h3>
 <ul>

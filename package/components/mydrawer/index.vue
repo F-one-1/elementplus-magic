@@ -37,10 +37,9 @@
       <div
         class="magic-drawer-body"
         :style="bodyStyle">
-        <slot/>
+        <slot name="body"></slot>
       </div>
       <div
-        v-if="$slots.footer"
         class="magic-drawer-footer">
         <slot name="footer"></slot>
       </div>

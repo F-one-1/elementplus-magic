@@ -1,5 +1,5 @@
 export const themeData = {
-  "logo": "/newlogo.jpg",
+  "logo": "/goodlogo.jpg",
   "repo": "https://github.com/F-one-1/elementplus-magic",
   "navbar": [
     {
@@ -8,7 +8,7 @@ export const themeData = {
     },
     {
       "text": "🦏🐂",
-      "link": "/AutoLoading/"
+      "link": "/demo/"
     }
   ],
   "sidebar": [
@@ -58,17 +58,4 @@ export const themeData = {
   "openInNewWindow": "open in new window",
   "toggleDarkMode": "toggle dark mode",
   "toggleSidebar": "toggle sidebar"
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateThemeData) {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ themeData }) => {
-    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
-  })
 }

@@ -4,17 +4,17 @@ module.exports = {
   // plugins: ["@vue/babel-plugin-jsx"],
   title: 'elementplus-magic',
   base: '/elementplus-magic/',
-  description: '基于 ElementUI 开发的一套高效的 UI 组件',
+  description: '基于 ElementPlus 开发的一套高效的 UI 组件',
   dest: './dist',
   head: [
-    ['link', { rel: 'icon', href: `/newlogo.jpg` }]
+    ['link', { rel: 'icon', href: `/goodlogo.jpg` }]
   ],
   themeConfig: {
-    logo: '/newlogo.jpg',
+    logo: '/goodlogo.jpg',
     repo: 'https://github.com/F-one-1/elementplus-magic',
     navbar: [
       { text: '快速开始', link: '/Form/' },
-      { text: '🦏🐂', link: '/AutoLoading/' },
+      { text: '🦏🐂', link: '/demo/' },
     ],
     sidebar: [
       {
@@ -54,5 +54,5 @@ module.exports = {
   // },
   chainWebpack: (config) => {
     config.resolve.alias.set('magic', path.join(__dirname, '../../package/'))
-  },
+  }
 }

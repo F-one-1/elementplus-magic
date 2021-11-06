@@ -1,3 +1,4 @@
+import './fit.js'
 import { defineClientAppEnhance } from '@vuepress/client'
 import d from './components/d.vue'
 import ElementPlus from 'element-plus'
@@ -5,6 +6,8 @@ import 'element-plus/dist/index.css'
 import magic from '../../package/index'
 import '../../package/style.scss'
 import mycode from './components/mgcode.vue'
+
+
 //代码高亮文件引入
 // import VueHighlightJS from 'vue-highlight.js'
 // import 'highlight.js/styles/default.css' // or other highlight.js theme
