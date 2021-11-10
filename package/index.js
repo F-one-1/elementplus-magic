@@ -31,3 +31,4 @@ export default {
     app.mixin(utils.mixinOptions(app))
   }
 }
+// error the npm style is not good 
