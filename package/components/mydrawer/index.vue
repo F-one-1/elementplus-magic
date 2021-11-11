@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import '../../theme/index.scss'
 import { computed } from '@vue/reactivity'
   import { getLayerIndex } from '../../utils/getLayerIndex'
 

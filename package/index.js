@@ -9,6 +9,7 @@ import MgAutoLoading from './components/AutoLoading/index.vue'
 import MgSpinner from './components/Spinner/index.vue'
 import MgForm from './business/Form/index.vue'
 import MgLayer from './components/Layer/myindex.vue'
+// import Drawer from './components/mydrawer/index.js'
 let components = [
   Button,
   Select,
@@ -23,12 +24,13 @@ let components = [
 export {
   model,
   utils,
+  // Drawer
 }
 export default {
   install (app) {
     global.use(app)
     components.forEach(v => app.component(v.name, v))
     app.mixin(utils.mixinOptions(app))
-  }
+  },
 }
 // error the npm style is not good 

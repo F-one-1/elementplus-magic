@@ -9,9 +9,11 @@
       title="Basic Drawer"
       v-model="value"
       showIcon>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
-      <p>Some contents...</p>
+      <template v-slot:body>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </template>
     </mg-drawer>
   </div>
 </template>
