@@ -5,7 +5,7 @@
 <script>
   import { model } from '../../../../package/index'
   import data from './data.js'
-
+  console.log('demomodel',model)
   export default {
     data() {
       return {

@@ -1,11 +1,15 @@
 <template>
   <mg-form :options="options"/>
+  <div>
+    {{ this.options }}
+  </div>
 </template>
 
 <script>
   import { model } from '../../../../package/index'
   import data from './data.js'
-
+  const type = typeof model
+  console.log('demomodel',model,type)
   export default {
     data() {
       return {
@@ -36,8 +40,11 @@
               setTimeout(done, 1000)
             }
           }
-        })
+        }),
       }
-    }
+    },
+    mounted() {
+      console.log(1,this.options)
+    },
   }
 </script>
