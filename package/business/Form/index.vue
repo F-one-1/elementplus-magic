@@ -15,6 +15,7 @@
       :label-width="currentLabelWidth"
       :label-position="currentLabelPosition">
       <form-columns
+        v-bind="$attrs"
         :cols="currentCols"
         :store="currentStore"
         :gutter="currentGutter"

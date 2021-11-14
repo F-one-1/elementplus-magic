@@ -1,6 +1,7 @@
 <template>
   <component
     v-model="currentValue"
+    v-bind="$attrs"
     :is="currentLayout"
     :props="props || prop"
     :events="events"
