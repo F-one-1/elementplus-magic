@@ -10,12 +10,16 @@ export {
   model,
   utils,
 }
+const install = (app) => {
+  global.use(app)
+  business.forEach(v => app.component(v.name, v))
+  // business.forEach(v => Vue.component(v.name, v))
+  components.forEach(v => app.component(v.name, v))
+  app.mixin(utils.mixinOptions(app))
+}
+// if(typeof window !== 'undefined' && window.Vue){
+//   install(window.Vue)
+// }
 export default {
-  install (app) {
-    global.use(app)
-    business.forEach(v => app.component(v.name, v))
-    // business.forEach(v => Vue.component(v.name, v))
-    components.forEach(v => app.component(v.name, v))
-    app.mixin(utils.mixinOptions(app))
-  }
+  install
 }

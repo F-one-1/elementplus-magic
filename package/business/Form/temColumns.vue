@@ -11,7 +11,6 @@
           :prop="column.config.field">
           <mg-form-column
             :style="column.config.style || column.config.width || '100%'"
-            :onInput="oninput"
             :source="getSource(column.config)"
             :modelValue="getValue(column.config)"
             :layout="column.config.layout"
@@ -51,9 +50,6 @@ export default {
     },
     getValue ({ field }) {
       return this.store.getValue(field)
-    },
-    oninput (){
-      return ''
     },
     // renderColumns () {
     //   const columns = this.getColumns()

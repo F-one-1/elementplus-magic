@@ -1,8 +1,10 @@
 <template>
   <el-input
+    :options="source"
     v-model="currentValue"
     v-bind="currentProps"
     v-on="currentEvents"
+    style="width:100%"
   />
 </template>
 
@@ -13,7 +15,7 @@
     mixins: [basic],
     setup(){
       return {
-        currentValue: ref(''),
+        currentValue: ref([]),
       }
     },
     computed: {

@@ -1,7 +1,6 @@
 <template>
   <component
     v-model="currentValue"
-    v-bind="$attrs"
     :is="currentLayout"
     :props="props || prop"
     :events="events"
@@ -23,18 +22,6 @@ export default {
     props: {},
     prop: {},
   },
-  // setup(props, context) {
-  //   // const currentValue1 = computed
-  //   const currentValue = computed({
-  //     get: () => props.modelValue,
-  //     set: (val) => {
-  //       context.emit("update:modelValue", val);
-  //     },
-  //   });
-  //   return {
-  //     currentValue,
-  //   };
-  // },
   computed: {
     currentLayout() {
       return typeof this.layout === "string"
@@ -49,14 +36,6 @@ export default {
         this.$emit('update:modelValue', val)
       }
     }
-    // currentValue: {
-    //   get() {
-    //     return this.value
-    //   },
-    //   set(val) {
-    //     this.$emit('input', val)
-    //   }
-    // }
   },
 };
 </script>
