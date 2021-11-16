@@ -1,26 +1,15 @@
 <template>
-  <el-input v-model="currentValue" v-bind="$attrs" placeholder="Please input" />
+  <el-input v-model="input" placeholder="Please input" />
 </template>
 
-<script>
-import { computed } from '@vue/reactivity'
-export default {
-  name: 'demoInput',
-  props: {
-    modelValue: {}
-  },
-  emits: ['update:modelValue'],
-  setup(props,context) {
-    // const currentValue1 = computed
-    const currentValue = computed({
-      get: () => props.modelValue,
-      set: val => {
-        context.emit('update:modelValue',val)
-      }
-    })
+<script >
+import { defineComponent, ref } from 'vue'
+export default defineComponent({
+  name: "demoInput",
+  setup() {
     return {
-      currentValue
+      input: ref(''),
     }
   },
-}
+})
 </script>

@@ -4,6 +4,7 @@
       <mg-form :options="options"/>
     </div>
   </div>
+  <demoForm/>
 </template>
 <style scoped>
 .code {
