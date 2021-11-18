@@ -6,6 +6,7 @@
 </div>
 <h3 id="自我介绍" tabindex="-1"><a class="header-anchor" href="#自我介绍" aria-hidden="true">#</a> 自我介绍</h3>
 <p><strong>一名前端新柚（￣。。￣），23届。正在找实习，求推</strong></p>
+<p>终于由公司要我了 呜呜呜~~~~</p>
 <h3 id="项目相关" tabindex="-1"><a class="header-anchor" href="#项目相关" aria-hidden="true">#</a> 项目相关</h3>
 <ul>
 <li>项目很普通，
