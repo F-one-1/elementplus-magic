@@ -18,9 +18,9 @@
 <script>
   import basic from './basic.js'
   import get from 'lodash/get'
-  import { ref } from "@vue/reactivity";
+  import { ref,defineComponent } from "vue";
 
-  export default {
+  export default defineComponent({
     mixins: [basic],
     setup() {
       return {
@@ -47,5 +47,5 @@
         return get(val, this.currentValueKey)
       }
     }
-  }
+  })
 </script>

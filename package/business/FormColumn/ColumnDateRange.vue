@@ -10,14 +10,14 @@
 <script>
   import merge from 'lodash/merge'
   import basic from './basic.js'
-  // import { ref } from "@vue/reactivity";
+  import { ref,defineComponent } from "vue";
   import { ShortCuts } from '../../utils/shortcuts.js'
 
-  export default {
+  export default defineComponent({
     mixins: [basic],
     setup() {
       return {
-        // currentValue: ref([])
+        currentValue: ref([])
       }
     },
     computed: {
@@ -34,5 +34,5 @@
         }, this.props)
       }
     }
-  }
+  })
 </script>

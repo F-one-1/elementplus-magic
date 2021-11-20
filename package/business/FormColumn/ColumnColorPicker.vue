@@ -8,8 +8,8 @@
 
 <script>
   import basic from './basic.js'
-  import { ref } from "@vue/reactivity";
-  export default {
+  import { ref,defineComponent } from "vue";
+  export default defineComponent({
     mixins: [basic],
     setup() {
       return {
@@ -24,5 +24,5 @@
         }
       }
     }
-  }
+  })
 </script>
