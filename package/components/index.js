@@ -6,6 +6,7 @@ import MgSpinner from './Spinner/index.vue'
 import MgLayer from './Layer/myindex.vue'
 import demoInput from './Input/index.vue'
 import demoForm from './Form/index.vue'
+import demoInputNumber from './InputNumber/index.vue'
 // import Drawer from './components/mydrawer/index.js'
 export default [
   Button,
@@ -15,6 +16,7 @@ export default [
   MgSpinner,
   MgLayer,
   demoInput,
-  demoForm
+  demoForm,
+  demoInputNumber
   // demo
 ]

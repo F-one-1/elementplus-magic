@@ -6,6 +6,7 @@
 import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
+  name: "demoInputNumber",
   setup() {
     const num = ref(1)
     const handleChange = (value) => {

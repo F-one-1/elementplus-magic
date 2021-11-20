@@ -16,7 +16,7 @@ import ColumnCheckbox from './ColumnCheckbox.vue'
 import ColumnColorPicker from './ColumnColorPicker.vue'
 
 import ColumnButton from './ColumnButton.vue'
-
+import ColumnInputNumber from './ColumnInputNumber.vue'
 
 // Todo
 // Transfer, editable, inputFormat
@@ -38,4 +38,5 @@ export default {
   ColumnCheckbox,
   ColumnColorPicker,
   ColumnButton,
+  ColumnInputNumber
 }
