@@ -13,12 +13,20 @@
             cols: 12
           },
           columns: [
-            { label: 'Textarea', field: 'desc', layout: 'Textarea', cols: 24 },
-            { label: 'Textarea', field: 'desc', layout: 'Textarea', cols: 24 , placeholder: ' '},
-            { label: 'Text', field: 'number', layout: 'Text' },
-            { label: 'Radio', field: 'level', layout: 'Radio', source: 'level', type: 'button' },
-            { label: 'Date', field: 'date', layout: 'Date' },
-            { label: 'Select', field: 'category', layout: 'Select', source: 'category', multiple: true },
+            { label: '隐患类别', field: 'category', layout: 'Select', source: 'category', multiple: true },
+            { label: '隐患内容', field: 'desc', layout: 'Textarea' },
+            { label: 'demoInputNumber', field: 'InputNumber', layout: 'InputNumber' },
+            { label: '隐患单号', field: 'number', layout: 'Text' },
+            { label: '隐患Switch', field: 'number1', layout: 'Switch' },
+            { label: 'ColorPicker', field: 'colorpicker', layout: 'ColorPicker' },
+            // { label: 'slider', field: 'slider', layout: 'Slider' },
+            { label: '隐患级别', field: 'level', layout: 'Radio', source: 'level', type: 'button' },
+            { label: '检查时间', field: 'mydate', layout: 'Date' },
+            { label: '检查时间', field: 'date', layout: 'DateTime' },
+            { label: '检查时间', field: 'date1', layout: 'DateRange' },
+            { label: '检查时间', field: 'date2', layout: 'DateTimeRange' },
+            { label: '隐患类别', field: 'category', layout: 'Select', source: 'category', multiple: true },
+            { label: '整改部门', field: 'department', layout: 'Cascader', source: 'department' },
           ],
           events: {
             init: () => {
@@ -27,6 +35,7 @@
               this.options.setSource('department', data.department)
             },
             submit: (form, done) => {
+              console.log('提交按钮带点击')
               setTimeout(done, 1000)
             },
           }

@@ -9,10 +9,10 @@
 
 <script>
   import basic from './basic.js'
-  import { ref } from "@vue/reactivity";
+  import { ref,defineComponent } from "vue";
   import MgSelect from '../../components/Select/elSelect.vue'
 
-  export default {
+  export default defineComponent({
     mixins: [basic],
     components: { MgSelect },
     setup(){
@@ -31,5 +31,5 @@
         }
       }
     }
-  }
+  })
 </script>

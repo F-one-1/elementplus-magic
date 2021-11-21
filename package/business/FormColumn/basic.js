@@ -1,4 +1,4 @@
-import { computed } from '@vue/reactivity'
+// import { computed } from '@vue/reactivity'
 export default {
   props: {
     props: {},
@@ -6,18 +6,18 @@ export default {
     source: {},
     modelValue: {}
   },
-  setup(props,context) {
-    // const currentValue1 = computed
-    const currentValue = computed({
-      get: () => props.modelValue,
-      set: val => {
-        context.emit('update:modelValue',val)
-      }
-    })
-    return {
-      currentValue
-    }
-  },
+  // setup(props,context) {
+  //   // const currentValue1 = computed
+  //   const currentValue = computed({
+  //     get: () => props.modelValue,
+  //     set: val => {
+  //       context.emit('update:modelValue',val)
+  //     }
+  //   })
+  //   return {
+  //     currentValue
+  //   }
+  // },
   computed: {
     // currentValue: {
     //   get() {

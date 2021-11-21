@@ -9,9 +9,9 @@
 
 <script>
   import basic from './basic.js'
-  import { ref } from "@vue/reactivity";
+  import { ref,defineComponent } from "vue";
 
-  export default {
+  export default defineComponent({
     mixins: [basic],
     setup() {
       return {
@@ -26,5 +26,5 @@
         }
       }
     }
-  }
+  })
 </script>
