@@ -1,6 +1,6 @@
 {
   "name": "elementplus-magic",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "private": false,
   "license": "MIT",
   "main": "./dist/elementplus-magic.umd.min.js",
