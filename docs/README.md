@@ -24,10 +24,20 @@ features:
 ```js
 import elementplusMagic from 'elementplus-magic'
 import ElementPlus from 'element-plus'
+import 'elementplus-magic/dist/elementplus-magic.css'
 import 'element-plus/dist/index.css'
 app.use(ElementPlus)
 app.use(elementplusMagic)
 ```
 ::: warning 注意
 请确保你的 Node.js 版本 >= 12.6。 
+:::
+
+::: warning 注意
+注意element-plus的版本问题，目前原组件中的是"element-plus": "^1.1.0-beta.4",
+
+而我在测试中发现，测试代码中引入最新的
+"element-plus": "1.2.0-beta.3"
+
+会出现部分问题比如ElNotification的显示问题(目前我知道的)
 :::

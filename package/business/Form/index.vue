@@ -55,7 +55,7 @@
                 size="small"
                 :loading="currentUseLoading ? loading : false"
                 type="primary">
-                {{ currentConfirmText }} 
+                {{ currentConfirmText }}
               </el-button>
             </el-popconfirm>
             <el-button
@@ -66,7 +66,7 @@
               :loading="currentUseLoading ? loading : false"
               type="primary"
               size="small">
-              {{ currentConfirmText }} 
+              {{ currentConfirmText }}
             </el-button>
           </template>
         </span>
@@ -80,9 +80,9 @@
   import AutoLoading from '../../components/AutoLoading/index.vue'
   // import PopoverConfirm from '../../basic/PopoverConfirm/index.vue'
   import Form from '../../model/Form'
-  import { tools as Tools } from '../../global'
-
-  export default {
+  import { ElNotification } from 'element-plus'
+  import {defineComponent} from 'vue'
+  export default defineComponent({
     name: 'MgForm',
     components: {
       FormColumns,
@@ -225,9 +225,9 @@
             if (this.currentAutoNotify) {
               if (err instanceof Error) {
                 const message = err ? err.message : '服务器错误, 请联系管理员'
-                Tools.Notification({ type: 'error', title: '提示', message: message })
+                ElNotification({ type: 'error', title: '提示', message: message })
               } else {
-                Tools.Notification({ type: 'success', title: '提示', message: '操作成功' })
+                ElNotification({ type: 'success', title: '提示', message: '操作成功' })
               }
             }
             if (!(err instanceof Error)) {
@@ -239,7 +239,7 @@
             this.loading = false
           })
         }, 0)
-      }
+      },
     }
-  }
+  })
 </script>

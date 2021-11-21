@@ -4,11 +4,12 @@ import * as utils from './utils'
 import global from './global.js'
 import components from './components'
 import business from './business'
-
+import ElNotification from 'element-plus'
 
 export {
   model,
   utils,
+  ElNotification
 }
 const install = (app) => {
   global.use(app)

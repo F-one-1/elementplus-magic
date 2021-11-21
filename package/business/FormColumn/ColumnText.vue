@@ -8,7 +8,9 @@
 
 <script >
 import { defineComponent, ref } from 'vue'
+import basic from './basic.js'
 export default defineComponent({
+  mixins: [basic],
   setup() {
     return {
       input: ref(''),

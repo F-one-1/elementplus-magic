@@ -1,8 +1,5 @@
 <template>
   <mg-form :options="options"/>
-  <div>
-    {{ this.options }}
-  </div>
 </template>
 
 <script>

@@ -41,7 +41,6 @@ export default {
       return this.store.setValue(field, val)
     },
     getCols ({ cols }) {
-      console.log('ddd',cols)
       return cols || this.cols
     },
     getSource ({ source }) {

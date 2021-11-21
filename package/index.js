@@ -4,6 +4,7 @@ import * as utils from './utils'
 import global from './global.js'
 import components from './components'
 import business from './business'
+import ElNotification from 'element-plus'
 // import Button from './components/Buttons/index.vue'
 // import Select from './components/Select/elSelect.vue'
 // import drawer from './components/mydrawer/index.vue'
@@ -26,6 +27,7 @@ import business from './business'
 export {
   model,
   utils,
+  ElNotification
   // Drawer
 }
 export default {

@@ -12,7 +12,7 @@
         options: new model.Form({
           columns: [
             { label: '多项选择', field: 'category', layout: 'Select', source: 'category', multiple: true , placeholder: ' '},
-            { label: '多行文本', field: 'desc', layout: 'Textarea' },
+            { label: '多行文本', field: 'desc', layout: 'Textarea', placeholder: '你可以设置你所需要的placeholder,也可以使用默认值'},
             { label: '单行文本', field: 'number', layout: 'Text' },
             { label: 'Switch', field: 'number1', layout: 'Switch' },
             { label: 'ColorPicker', field: 'colorpicker', layout: 'ColorPicker' },
