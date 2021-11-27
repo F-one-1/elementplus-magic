@@ -71,26 +71,13 @@ export const data = {
   ],
   "filePathRelative": "Form/README.md",
   "git": {
-    "updatedTime": 1637501797000,
+    "updatedTime": 1638025215000,
     "contributors": [
       {
         "name": "“F-one-1”",
         "email": "fy1033409628@163.com",
-        "commits": 9
+        "commits": 10
       }
     ]
   }
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }

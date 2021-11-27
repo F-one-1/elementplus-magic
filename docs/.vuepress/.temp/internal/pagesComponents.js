@@ -7,10 +7,10 @@ export const pagesComponents = {
   "v-cf0f0232": defineAsyncComponent(() => import(/* webpackChunkName: "v-cf0f0232" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Buttons/index.html.vue")),
   // path: /demo/
   "v-1473bf53": defineAsyncComponent(() => import(/* webpackChunkName: "v-1473bf53" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/demo/index.html.vue")),
-  // path: /Drawer/
-  "v-3f443025": defineAsyncComponent(() => import(/* webpackChunkName: "v-3f443025" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Drawer/index.html.vue")),
   // path: /Form/
   "v-12d19c72": defineAsyncComponent(() => import(/* webpackChunkName: "v-12d19c72" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Form/index.html.vue")),
+  // path: /Drawer/
+  "v-3f443025": defineAsyncComponent(() => import(/* webpackChunkName: "v-3f443025" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Drawer/index.html.vue")),
   // path: /Layer/
   "v-50dcd557": defineAsyncComponent(() => import(/* webpackChunkName: "v-50dcd557" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Layer/index.html.vue")),
   // path: /start/
