@@ -8,250 +8,30 @@ pageClass: markdown-page
 
 ### 基础用法
 
-<mycode tag="Layer/Simple"/>
+<democode tag="Layer/Simple"/>
 
-```vue
-<template>
-  <div>
-    <el-button
-      @click="onShow"
-      type="primary">
-      打开弹框
-    </el-button>
-    <mg-layer ref="layer">
-      <mg-form :options="options"/>
-    </mg-layer>
-  </div>
-</template>
 
-<script>
-  import { model } from 'magic'
-
-  export default {
-    data() {
-      return {
-        options: new model.Form({
-          columns: [
-            { label: '隐患单号', field: 'number', layout: 'Text' },
-            { label: '隐患内容', field: 'content', layout: 'Text' },
-            { label: '检查时间', field: 'date', layout: 'Date' },
-            { label: '隐患级别', field: 'level', layout: 'Date' }
-          ],
-          events: {
-            cancel: () => this.$refs.layer.onClose(),
-            submit: (form, done) => {
-              setTimeout(done, 1000)
-            }
-          }
-        })
-      }
-    },
-    methods: {
-      onShow() {
-        this.$refs.layer.onShow({ title: '创建' })
-      }
-    }
-  }
-</script>
-
-```
 ### 禁止拖拽
 
-<mycode tag="Layer/Draggable"/>
+<democode tag="Layer/Draggable"/>
 
-```vue
-<template>
-  <div>
-    <el-button
-      @click="onShow"
-      type="primary">
-      打开弹框
-    </el-button>
-    <mg-layer
-      :draggable="false"
-      ref="layer">
-      <mg-form :options="options"/>
-    </mg-layer>
-  </div>
-</template>
 
-<script>
-  import { model } from 'magic'
-
-  export default {
-    data() {
-      return {
-        options: new model.Form({
-          columns: [
-            { label: '隐患单号', field: 'number', layout: 'Text' },
-            { label: '隐患内容', field: 'content', layout: 'Text' },
-            { label: '检查时间', field: 'date', layout: 'Date' },
-            { label: '隐患级别', field: 'level', layout: 'Date' }
-          ],
-          events: {
-            cancel: () => this.$refs.layer.onClose()
-          }
-        })
-      }
-    },
-    methods: {
-      onShow() {
-        this.$refs.layer.onShow({ title: '创建' })
-      }
-    }
-  }
-</script>
-
-```
 ### 禁止拉伸
 
-<mycode tag="Layer/Resizable"/>
+<democode tag="Layer/Resizable"/>
 
-```vue
-<template>
-  <div>
-    <el-button
-      @click="onShow"
-      type="primary">
-      打开弹框
-    </el-button>
-    <mg-layer
-      :resizable="false"
-      ref="layer">
-      <mg-form :options="options"/>
-    </mg-layer>
-  </div>
-</template>
 
-<script>
-  import { model } from 'magic'
 
-  export default {
-    data() {
-      return {
-        options: new model.Form({
-          columns: [
-            { label: '隐患单号', field: 'number', layout: 'Text' },
-            { label: '隐患内容', field: 'content', layout: 'Text' },
-            { label: '检查时间', field: 'date', layout: 'Date' },
-            { label: '隐患级别', field: 'level', layout: 'Date' }
-          ],
-          events: {
-            cancel: () => this.$refs.layer.onClose()
-          }
-        })
-      }
-    },
-    methods: {
-      onShow() {
-        this.$refs.layer.onShow({ title: '创建' })
-      }
-    }
-  }
-</script>
-
-```
 ### 关闭遮罩
 
-<mycode tag="Layer/HideMask"/>
+<democode tag="Layer/HideMask"/>
 
-```vue
-<template>
-  <div>
-    <el-button
-      @click="onShow"
-      type="primary">
-      打开弹框
-    </el-button>
-    <mg-layer
-      :showMask="false"
-      ref="layer">
-      <mg-form :options="options"/>
-    </mg-layer>
-  </div>
-</template>
 
-<script>
-  import { model } from 'magic'
-
-  export default {
-    data() {
-      return {
-        options: new model.Form({
-          columns: [
-            { label: '隐患单号', field: 'number', layout: 'Text' },
-            { label: '隐患内容', field: 'content', layout: 'Text' },
-            { label: '检查时间', field: 'date', layout: 'Date' },
-            { label: '隐患级别', field: 'level', layout: 'Date' }
-          ],
-          events: {
-            cancel: () => this.$refs.layer.onClose()
-          }
-        })
-      }
-    },
-    methods: {
-      onShow() {
-        this.$refs.layer.onShow({ title: '创建' })
-      }
-    }
-  }
-</script>
-
-```
 ### 定制宽高
 
-<mycode tag="Layer/Custom"/>
+<democode tag="Layer/Custom"/>
 
-```vue
-<template>
-  <div>
-    <el-button
-      @click="onShow"
-      type="primary">
-      打开弹框
-    </el-button>
-    <mg-layer
-      width="90%"
-      height="90%"
-      :top="null"
-      ref="layer">
-      <mg-form :options="options"/>
-    </mg-layer>
-  </div>
-</template>
 
-<script>
-  import { model } from 'magic'
-
-  export default {
-    data() {
-      return {
-        options: new model.Form({
-          columns: [
-            { label: '隐患单号', field: 'number', layout: 'Text' },
-            { label: '隐患内容', field: 'content', layout: 'Text' },
-            { label: '检查时间', field: 'date', layout: 'Date' },
-            { label: '隐患级别', field: 'level', layout: 'Date' }
-          ],
-          events: {
-            cancel: () => this.$refs.layer.onClose(),
-            submit: (form, done) => {
-              setTimeout(done, 1000)
-            }
-          }
-        })
-      }
-    },
-    methods: {
-      onShow() {
-        this.$refs.layer.onShow({ title: '创建' })
-      }
-    }
-  }
-</script>
-
-```
 ### Attributes
 
 | name           | default | desc                      

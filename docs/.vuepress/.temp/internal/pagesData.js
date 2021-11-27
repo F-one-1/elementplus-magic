@@ -11,6 +11,8 @@ export const pagesData = {
   "v-12d19c72": () => import(/* webpackChunkName: "v-12d19c72" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Form/index.html.js").then(({ data }) => data),
   // path: /Layer/
   "v-50dcd557": () => import(/* webpackChunkName: "v-50dcd557" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/Layer/index.html.js").then(({ data }) => data),
+  // path: /start/
+  "v-d72a4774": () => import(/* webpackChunkName: "v-d72a4774" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/start/index.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"D:/vscode/Vue/ddd/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

@@ -8,23 +8,23 @@ pageClass: markdown-page
 
 ### 基础用法
 
-<mycode tag="Drawer/Simple"/>
+<democode tag="Drawer/Simple"/>
 
 ### 左侧弹出
 
-<mycode tag="Drawer/Left"/>
+<democode tag="Drawer/Left"/>
 
 ### 显示Icon
 
-<mycode tag="Drawer/Icon"/>
+<democode tag="Drawer/Icon"/>
 
 ### 自定义底部
 
-<mycode tag="Drawer/Footer"/>
+<democode tag="Drawer/Footer"/>
 
 ### 弹出表单
 
-<mycode tag="Drawer/Form"/>
+<democode tag="Drawer/Form"/>
 
 ### Attributes
 

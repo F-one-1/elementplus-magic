@@ -13,10 +13,14 @@ module.exports = {
     logo: '/goodlogo.jpg',
     repo: 'https://github.com/F-one-1/elementplus-magic',
     navbar: [
-      { text: '快速开始', link: '/Form/' },
-      { text: '🦏🐂', link: '/demo/' },
+      { text: 'Start', link: '/start/' },
+      { text: '表单组件', link: '/Form/' },
     ],
     sidebar: [
+      {
+        text: '快速开始',
+        link: '/start/',
+      },
       {
         text: 'Form',
         link: '/Form/',

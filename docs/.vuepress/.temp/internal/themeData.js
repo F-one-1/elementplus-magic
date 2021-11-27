@@ -4,14 +4,18 @@ export const themeData = {
   "navbar": [
     {
       "text": "快速开始",
-      "link": "/Form/"
+      "link": "/start/"
     },
     {
-      "text": "🦏🐂",
-      "link": "/demo/"
+      "text": "表单组件",
+      "link": "/Form/"
     }
   ],
   "sidebar": [
+    {
+      "text": "快速开始",
+      "link": "/start/"
+    },
     {
       "text": "Form",
       "link": "/Form/"

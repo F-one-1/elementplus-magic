@@ -4,7 +4,12 @@
 
 <script>
   import { model } from '../../../../package/index'
+  // import { model } from 'elementplus-magic'  (In you package ,you should use this one)
+  // warning: you should use 'elementplus-magic',Not '../../../package/index'
+  // because it is not exits,it is in my local file
   import data from './data.js'
+  // data.js is also in my local file
+  // Define your own data, or the data returned by the interface
   const type = typeof model
   console.log('demomodel',model,type)
   export default {

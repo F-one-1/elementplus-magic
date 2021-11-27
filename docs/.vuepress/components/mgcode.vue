@@ -33,8 +33,6 @@ export default {
         return this.isShow ? '隐藏代码' : '显示代码'
       },
       currentLayout() {
-        console.log(this.tag)
-        console.log('./' + this.tag + '.' + this.suffix)
         return require('./' + this.tag + '.' + this.suffix).default
       },
       currentCode() {

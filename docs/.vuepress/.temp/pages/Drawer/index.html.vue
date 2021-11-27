@@ -1,15 +1,15 @@
 <template><h1 id="drawer" tabindex="-1"><a class="header-anchor" href="#drawer" aria-hidden="true">#</a> Drawer</h1>
 <p>抽屉组件</p>
 <h3 id="基础用法" tabindex="-1"><a class="header-anchor" href="#基础用法" aria-hidden="true">#</a> 基础用法</h3>
-<mycode tag="Drawer/Simple"/>
+<democode tag="Drawer/Simple"/>
 <h3 id="左侧弹出" tabindex="-1"><a class="header-anchor" href="#左侧弹出" aria-hidden="true">#</a> 左侧弹出</h3>
-<mycode tag="Drawer/Left"/>
+<democode tag="Drawer/Left"/>
 <h3 id="显示icon" tabindex="-1"><a class="header-anchor" href="#显示icon" aria-hidden="true">#</a> 显示Icon</h3>
-<mycode tag="Drawer/Icon"/>
+<democode tag="Drawer/Icon"/>
 <h3 id="自定义底部" tabindex="-1"><a class="header-anchor" href="#自定义底部" aria-hidden="true">#</a> 自定义底部</h3>
-<mycode tag="Drawer/Footer"/>
+<democode tag="Drawer/Footer"/>
 <h3 id="弹出表单" tabindex="-1"><a class="header-anchor" href="#弹出表单" aria-hidden="true">#</a> 弹出表单</h3>
-<mycode tag="Drawer/Form"/>
+<democode tag="Drawer/Form"/>
 <h3 id="attributes" tabindex="-1"><a class="header-anchor" href="#attributes" aria-hidden="true">#</a> Attributes</h3>
 <table>
 <thead>

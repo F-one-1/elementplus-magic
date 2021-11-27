@@ -20,8 +20,14 @@ export const data = {
     },
     {
       "level": 3,
-      "title": "🐕🐱🦒🐖🐺🦊🐂🐏🦏",
-      "slug": "🐕🐱🦒🐖🐺🦊🐂🐏🦏",
+      "title": "Fany",
+      "slug": "fany",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "完善日历",
+      "slug": "完善日历",
       "children": []
     }
   ],

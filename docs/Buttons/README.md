@@ -8,141 +8,24 @@ pageClass: markdown-page
 
 ### 基础用法
 
-<mycode tag="Buttons/Simple"/>
+<democode tag="Buttons/Simple"/>
 
-```vue
-<template>
-  <mg-buttons :buttons="buttons"/>
-</template>
-
-<script>
-  export default {
-    data() {
-      return {
-        buttons: {
-          create: () => {
-            console.log('点击了创建')
-          },
-          edit: () => {
-            console.log('点击了修改')
-          },
-          delete: () => {
-            console.log('点击了删除')
-          }
-        }
-      }
-    }
-  }
-</script>
-
-```
 
 ### 分割线
 
-<mycode tag="Buttons/Divider"/>
+<democode tag="Buttons/Divider"/>
 
-```vue
-<template>
-  <mg-buttons :buttons="buttons"/>
-</template>
 
-<script>
-  export default {
-    data() {
-      return {
-        buttons: {
-          create: () => {
-            console.log('点击了创建')
-          },
-          delete: () => {
-            console.log('点击了删除')
-          },
-          'divider:1': null,
-          import: () => {
-            console.log('点击了导入')
-          },
-          export: () => {
-            console.log('点击了导出')
-          },
-          'divider:2': null,
-          sync: () => {
-            console.log('点击了同步')
-          }
-        }
-      }
-    }
-  }
-</script>
-
-```
 ### 空格分割
 
-<mycode tag="Buttons/Space"/>
+<democode tag="Buttons/Space"/>
 
-```vue
-<template>
-  <mg-buttons :buttons="buttons"/>
-</template>
-
-<script>
-  export default {
-    data() {
-      return {
-        buttons: {
-          create: () => {
-            console.log('点击了创建')
-          },
-          delete: () => {
-            console.log('点击了删除')
-          },
-          'space:1': null,
-          import: () => {
-            console.log('点击了导入')
-          },
-          export: () => {
-            console.log('点击了导出')
-          },
-          'space:2': null,
-          sync: () => {
-            console.log('点击了同步')
-          }
-        }
-      }
-    }
-  }
-</script>
-
-```
 
 ### 自定义按钮
 
-<mycode tag="Buttons/Custom"/>
+<democode tag="Buttons/Custom"/>
 
-```vue
-<template>
-  <mg-buttons :buttons="buttons"/>
-</template>
 
-<script>
-  export default {
-    data() {
-      return {
-        buttons: {
-          'approve:审 批': () => {},
-          divider: null,
-          'create:true': () => {
-            console.log('点击了创建')
-          },
-          delete: () => {
-            console.log('点击了删除')
-          }
-        }
-      }
-    }
-  }
-</script>
-
-```
 ### 默认Button数据
 
 ```js
@@ -215,70 +98,13 @@ export default {
 
 ### 使用Icon
 
-<mycode tag="Buttons/Icon"/>
+<democode tag="Buttons/Icon"/>
 
-```vue
-
-<template>
-  <mg-buttons
-    layout="icon"
-    :buttons="buttons"
-  />
-</template>
-
-<script>
-  export default {
-    data() {
-      return {
-        buttons: {
-          create: () => {
-            console.log('点击了创建')
-          },
-          edit: () => {
-            console.log('点击了编辑')
-          },
-          delete: () => {
-            console.log('点击了删除')
-          }
-        }
-      }
-    }
-  }
-</script>
-```
 
 ### Tooltip
 
-<mycode tag="Buttons/Tooltip"/>
+<democode tag="Buttons/Tooltip"/>
 
-```vue
-<template>
-  <mg-buttons
-    layout="icon"
-    :buttons="buttons"
-  />
-</template>
-
-<script>
-  export default {
-    data() {
-      return {
-        buttons: {
-          'create:true': () => {
-            console.log('点击了创建')
-          },
-          'edit:true': () => {
-            console.log('点击了编辑')
-          },
-          'delete:true': () => {
-            console.log('点击了删除')
-          }
-        }
-      }
-    }
-  }
-</script>
-```
 
 ### 默认Icon数据
 

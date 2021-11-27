@@ -13,7 +13,9 @@
 
 <script>
   import { model } from '../../../../package/index.js'
-
+  // import { model } from 'elementplus-magic'  (In you package ,you should use this one)
+  // warning: you should use 'elementplus-magic',Not '../../../package/index'
+  // because it is not exits,it is in my local file
   export default {
     data() {
       return {
