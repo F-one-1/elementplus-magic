@@ -1,6 +1,6 @@
 {
   "name": "elementplus-magic",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "private": false,
   "license": "MIT",
   "main": "./dist/elementplus-magic.umd.min.js",
@@ -64,5 +64,16 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/F-one-1/elementplus-magic.git"
+  },
+  "homepage": "https://github.com/F-one-1/elementplus-magic",
+  "keywords": [
+    "vue3",
+    "component",
+    "element-plus",
+    "Form"
   ]
 }
