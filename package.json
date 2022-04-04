@@ -20,8 +20,6 @@
     "element-plus": "^1.1.0-beta.4",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
-    "node-sass": "6.0.1",
-    "sass-loader": "11.1.0",
     "vue": "^3.2.6",
     "vue-draggable-resizable": "2.0.0-rc2",
     "vue-router": "^4.0.11"
@@ -43,7 +41,9 @@
     "text-loader": "^0.0.1",
     "vue-highlight.js": "4.0.1-beta",
     "vue3-draggable-resizable": "^1.6.1",
-    "vuepress": "^2.0.0-beta.26"
+    "vuepress": "^2.0.0-beta.26",
+    "sass": "^1.38.1",
+    "sass-loader": "^8.0.2"
   },
   "eslintConfig": {
     "root": true,
