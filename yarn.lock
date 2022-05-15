@@ -3200,6 +3200,20 @@ element-plus@^1.1.0-beta.4:
     normalize-wheel-es "^1.1.0"
     resize-observer-polyfill "^1.5.1"
 
+elementplus-magic@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.npmmirror.com/elementplus-magic/-/elementplus-magic-1.0.16.tgz#f90d57df30f8e2c70eadd742a6694dad9832f274"
+  integrity sha512-ieiauMJ1Jaxg28oJ5Phs6uTFASf8LF7wJBrZXP+/iChNUuMqaZr6fcFUjXxs9B75qL8hJvRjSj+Bq4t5A82BAQ==
+  dependencies:
+    "@vuepress/client" "^2.0.0-beta.26"
+    core-js "^3.8.3"
+    element-plus "^1.1.0-beta.4"
+    lodash "^4.17.11"
+    moment "^2.24.0"
+    vue "^3.2.6"
+    vue-draggable-resizable "2.0.0-rc2"
+    vue-router "^4.0.11"
+
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.npmmirror.com/emoji-regex/download/emoji-regex-8.0.0.tgz?cache=0&sync_timestamp=1632751333727&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Femoji-regex%2Fdownload%2Femoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
